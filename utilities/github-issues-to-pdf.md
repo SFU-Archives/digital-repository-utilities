@@ -1,7 +1,11 @@
 # github-issues-to-pdf script
 
 **Contents**
-[[_TOC_]]
+- [Purpose](#purpose)
+- [Description and use](#description-and-use)
+- [Install](#install)
+- [Run](#run)
+- [Links](#links)
 
 ## Purpose
 Output `Issues` from a GitHub repository as pdf files.
@@ -39,7 +43,7 @@ Run the script from Terminal:
 
 - The pdfs (one for each issue) are output to a folder in the script directory, `rendered_PDFs`; the folder will be created if it does not already exist.
 
-## Other documentation
+## Links
 Source code on GitHub: https://github.com/axfelix/github-issues-to-pdf.
 
 ###### Last updated: Oct 22, 2020
