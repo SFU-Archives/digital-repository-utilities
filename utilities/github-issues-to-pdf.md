@@ -1,7 +1,7 @@
 # github-issues-to-pdf script
 
 **Contents**
-[[__TOC__]]
+[[_TOC_]]
 
 ## Purpose
 Output `Issues` from a GitHub repository as pdf files.
