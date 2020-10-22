@@ -19,12 +19,12 @@ The script uses [nodejs](https://nodejs.org/en/), a form of command-line javascr
 
 ## Install
 Open Terminal to install:
-1. Install node: `brew install node`.
-1. Clone the script library: `git clone https://github.com/axfelix/github-issues-to-pdf`.
-1. Navigate to the cloned directory: `cd github-issues-to-pdf`
-1. Install script library's dependencies: `npm install`
+1. Install node: `$ brew install node`.
+1. Clone the script library: `$ git clone https://github.com/axfelix/github-issues-to-pdf`.
+1. Navigate to the cloned directory: `$ cd github-issues-to-pdf`
+1. Install script library's dependencies: `$ npm install`
 
-**Notes**
+**Notes:**
 
 - Find the `github-issues-to-pdf` directory in your user home folder; the directory can be moved to any location on your computer.
 
@@ -34,12 +34,16 @@ Open Terminal to install:
 
 ## Run
 Run the script from Terminal:
-1. Navigate to script directory: `cd github-issues-to-pdf`.
-1. Run the script: `npm start`.
+1. Navigate to script directory: `$ cd github-issues-to-pdf`.
+1. Run the script: `$ npm start`.
 1. If this is the first time running the script, you will prompted for a [personal access token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token).
-1. You will be prompted to specify the `type of repository` ("organization"), `name of account` (e.g. "sfu-archives"), `name of repository` (e.g. "software-development-priorities") and whether or not to specify `year issue was opened`.
+1. You will be prompted to specify a number of variables:
+- `type of repository` ("organization")
+- `name of account` (e.g. "sfu-archives")
+- `name of repository` (e.g. "software-development-priorities")
+- whether or not to specify `year issue was opened`
 
-**Notes**
+**Notes:**
 
 - The pdfs (one for each issue) are output to a folder in the script directory, `rendered_PDFs`; the folder will be created if it does not already exist.
 
