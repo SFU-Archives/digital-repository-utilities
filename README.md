@@ -1,5 +1,6 @@
 # Digital Repository Utilities
 
-This site is under development. It will document the various software tools and scripts SFU Archives uses in its digital repository.
+This site provides documentation for the various software tools and scripts SFU Archives uses in its digital repository.
+- [github-issues-to-pdf](utilties/github-issues-to-pdf.md): output GitHub `Issues` as pdf files.
 
-###### Last updated: Aug 31, 2020
+###### Last updated: Oct 22, 2020
