@@ -1,5 +1,8 @@
 # github-issues-to-pdf script
 
+**Contents**
+[[__TOC__]]
+
 ## Purpose
 Output `Issues` from a GitHub repository as pdf files.
 
@@ -19,16 +22,11 @@ Open Terminal to install:
 
 **Notes**
 
-Find the `github-issues-to-pdf` directory in your user home folder.
-- The directory can be moved to any location on your computer.
+- Find the `github-issues-to-pdf` directory in your user home folder; the directory can be moved to any location on your computer.
 
-To run the script, you will also need a GitHub personal access token (PAT).
-- See [instructions here](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token).
-- The first time you run the script, GIP will ask for it.
+- To run the script, you will also need a GitHub [personal access token (PAT)](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token); the first time you run the script, GIP will ask for it; you will not need to enter it subsequently.
 
-When installing, you may get security warnings relating to `https-proxy-agent`.
-- This is because the script was forked from a package that has some outdated dependencies.
-- These are not critical because the script will only be run locally as a one-off and not as part of a server stack.
+- When installing, you may get security warnings relating to `https-proxy-agent`. This is because the script was forked from a package that has some outdated dependencies; these are not critical because the script will only be run locally as a one-off and not as part of a server stack.
 
 ## Run
 Run the script from Terminal:
@@ -39,8 +37,7 @@ Run the script from Terminal:
 
 **Notes**
 
-The pdfs (one for each issue) are output to a folder in the script directory, `rendered_PDFS`.
-- The folder will be created if it does not already exist.
+- The pdfs (one for each issue) are output to a folder in the script directory, `rendered_PDFs`; the folder will be created if it does not already exist.
 
 ## Other documentation
 Source code on GitHub: https://github.com/axfelix/github-issues-to-pdf.
