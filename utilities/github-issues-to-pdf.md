@@ -1,19 +1,18 @@
-# github-issues-to-pdf script
+###### [Digital Repository Utilities](../README.md)
+
+# github-issues-to-pdf Script
+Outputs `Issues` from a GitHub repository as pdf files.
 
 **Contents**
-- [Purpose](#purpose)
 - [Description and use](#description-and-use)
 - [Install](#install)
 - [Run](#run)
 - [Links](#links)
 
-## Purpose
-Output `Issues` from a GitHub repository as pdf files.
-
 ## Description and use
-The script creates a print-friendly pdf of the full comment string on the repository's `Issues`.
+The script creates a print-friendly pdf of the full comment string on a GitHub repository's `Issues`.
 
-SFU Archives uses this mainly with its [Software Development Priorities](https://github.com/SFU-Archives/software-development-priorities) repository, where software features for possible development are tracked as GitHub issues. A snapshot is produced whenever the Archives reviews features and re-assigns priorities, typically at the end of a development contract or beginning of planning for a new one. The full set of issues is output, then consolidated in Acrobat as a single pdf file.
+SFU Archives uses this mainly with its [Software Development Priorities](https://github.com/SFU-Archives/software-development-priorities) repository, where software features for possible development are tracked as GitHub issues. The Archives creates periodic snapshots, typically at the end of a development contract or beginning of planning for a new one. The script outputs the full set of issues, which can then be consolidated in Acrobat as a single pdf file.
 
 The script uses [nodejs](https://nodejs.org/en/), a form of command-line javascript. The script was developed by Alex Garnett and is maintained in its own [GitHub repository](https://github.com/axfelix/github-issues-to-pdf).
 
