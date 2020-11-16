@@ -1,7 +1,7 @@
 ###### [Digital Repository Utilities](../README.md)
 
 # ClamAV
-Check digital transfers for viruses and malware.
+Antivirus engine used to check for malware in digital transfers.
 
 **Contents**
 - [Description](#description)
@@ -11,7 +11,7 @@ Check digital transfers for viruses and malware.
 - [Links](#links)
 
 ## Description
-Use ClamAV to scan transfer packages for malware and remove it before ingest to the repository. If you find infected files in a given transfer, you should contact the producer to advise them of the situation.
+Use ClamAV to scan transfer packages for viruses malware and remove them before ingest to the repository. If you find infected files in a given transfer, you should contact the producer to advise them of the situation.
 
 ## Installation
 Install ClamAV with `homebrew` (Mac users).
@@ -38,6 +38,8 @@ You will need to create and edit configuration files to run the software. In ord
 ```
 
 ## Usage
+Run ClamAV in a Terminal window.
+
 Always update the virus definitions database before running a scan.
 
 ```

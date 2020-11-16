@@ -1,6 +1,6 @@
 # Digital Repository Utilities
 
-This site provides documentation for the various software tools and scripts SFU Archives uses in its digital repository.
+This site provides documentation for the various software tools and scripts SFU Archives uses in its digital repository. Please note that it is a work in-progress, with regular updates as new sections are completed.
 
 - Access-to-Memory (AtoM): SFU Archives' online access platform and catalog of archival descriptions
 
