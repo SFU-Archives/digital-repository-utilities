@@ -24,11 +24,11 @@ $ brew install clamav
 - You will need administrator access to your computer to install the software.
 
 ## Configuration
-You will need to create and edit configuration files to run the software. In order to access these files, set your Mac to view hidden files: `shift + command + .`.
+You will need to create and edit configuration files to run the software. In order to access these files, set your Mac to view hidden files: `shift + command + .`
 
-- Navigate to `/usr/local/etc/clamav`.
+- Navigate to `/usr/local/etc/clamav`
 
-- Create copies of the sample config files `clam.conf.sample`and `freshclam.conf.sample` as `clam.conf` and `freshclam.conf`.
+- Create copies of the sample config files `clam.conf.sample`and `freshclam.conf.sample` as `clam.conf` and `freshclam.conf`
 
 - Use a text editor (e.g BBEdit) to find and comment out (add `#` to) these lines in both files:
 

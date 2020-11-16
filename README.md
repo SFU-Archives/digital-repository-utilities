@@ -8,13 +8,13 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - AIS database: Custom FileMaker database used to manage information relating to accessions and AIPs.
 
-- Archivematica: successful Archives' main digital preservation platform.
+- Archivematica: SFU Archives' main digital preservation platform.
 
 - Bagger: Desktop application for validating transfer packages received by Archives.
 
 - Brunnhilde: Characterization tool for analyzing files transferred to Archives.
 
-- ClamAV: Open-source antivirus engine used to check for viruses and malware on files transferred to Archives.
+- [ClamAV](utilities/clamav.md): Open-source antivirus engine used to check for viruses and malware on files transferred to Archives.
 
 - ePADD: Open-source software for processing and providing access to email archives.
 
