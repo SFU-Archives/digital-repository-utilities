@@ -36,6 +36,6 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - SFU Vault: SFU's cloud service for file sharing and storage; used in digital transfer.
 
-- [Tree](Tree.md): Command-line utility for analyzing the directory structure of digital transfers.
+- [Tree](utilities/Tree.md): Command-line utility for analyzing the directory structure of digital transfers.
 
 ###### Last updated: Oct 30, 2020
