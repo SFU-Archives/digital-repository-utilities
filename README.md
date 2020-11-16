@@ -14,7 +14,7 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - Brunnhilde: Characterization tool for analyzing files transferred to Archives.
 
-- [ClamAV](utilities/clamav.md): Open-source antivirus engine used to check for viruses and malware on files transferred to Archives.
+- [ClamAV](utilities/clamav.md): Antivirus engine used to check for malware in digital transfers.
 
 - ePADD: Open-source software for processing and providing access to email archives.
 
@@ -36,6 +36,6 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - SFU Vault: SFU's cloud service for file sharing and storage; used in digital transfer.
 
-- Tree: Command-line utility for analyzing the directory structure of digital transfers.
+- [Tree](Tree.md): Command-line utility for analyzing the directory structure of digital transfers.
 
 ###### Last updated: Oct 30, 2020
