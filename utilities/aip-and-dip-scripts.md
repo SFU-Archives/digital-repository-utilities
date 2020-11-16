@@ -14,12 +14,12 @@ Retrieve stored AIPs and DIPs, upload DIPs or DIP metadata to AtoM.
 - [Links](#links)
 
 ## Description
-These are command-line scripts or commands to support ad-hoc retrieval and upload of packages from / to Archivematica or AtoM outside the interfaces provided by those applications. In some cases, they provide a faster alternative to the application interface; in others, there is no application interface for the required action and the command-line provides the only method.
+These are command-line scripts to support ad-hoc retrieval of packages from Archivematica and upload to AtoM, by-passing the interfaces provided by those applications. In some cases, they provide a faster alternative to the application interface; in others, there is no interface for the required action and the command-line provides the only method.
 
 ## Installation
 [AIP retrieve](#aip-retrieve) is an `scp` (secure copy) command that can be run from Terminal and does not need to be installed.
 
-The DIP scripts are compiled Python scripts that should be installed on your computer so that they can be easily run as line commands in Terminal. Download copies from the shared drive at `ITM002-40 > DRUtilities > DIPUploadCLIScripts`. Unzip the files and move to your `/usr/local/bin/` directory.
+The DIP scripts are compiled Python scripts that should be installed on your computer so that they can be easily run as line commands in Terminal. Download copies from the shared drive at `ITM002-40 > DRUtilities > AIP_DIP_Scripts`. Unzip the files and move to your `/usr/local/bin/` directory.
 
 ```
 $ mv <file_path_of_downloaded_copy> /usr/local/bin/
@@ -33,7 +33,7 @@ $ mv <file_path_of_downloaded_copy> /usr/local/bin/
 - You must have passwordless key-based authentication, i.e. your computer's RSA key must be added to the VMs as an authorized key.
 
 ## Usage
-###AIP retrieve
+### AIP retrieve
 You can download AIPs through your web browser from the Archivematica or Storage Service interface, but this can be slow when the AIP is large. The `AIP retrieve` command provides a quicker alternative. Note that the target file path is different depending on whether the package is a fully processed AIP or still in backlog.
 
 **To download an AIP**
@@ -43,7 +43,7 @@ $ scp -r <<user_name>>@cherry.archives.sfu.ca:'/data/<<pipeline>>/aips/**/<<aip_
 
 **To download a backlog package**
 ```
-$ scp <<user_name>@cherry.archives.sfu.ca:'/data/<<pipeline>>/transfer_backlog/originals/<<aip_name>>*'
+$ scp <<user_name>@cherry.archives.sfu.ca:'/data/<<pipeline>>/transfer_backlog/originals/<<aip_name>>*' .
 ```
 
 **Notes**
@@ -87,15 +87,17 @@ $ dip-retrieve <pipeline> <user_name> <aip_name>
 This script uploads DIP objects to existing description records in SFU AtoM, using a csv file to map objects to descriptions.
 
 **Edit the csv file**
+
 You must first run the [DIP retrieve script](#dip-retrieve) and edit the csv file included in the DIP package.
 - The csv file will be included in the `objects` folder and it will have the same name as the parent DIP folder, e.g. `ACN2018-025_Fellman_EmailAttachments.csv`.
 
 The csv file has two columns: `filename` and `slug`.
 - The `filename` column (A) lists the names of the digital objects in the DIP; the names include the UUID that Archivematica assigned to each object.
-- The `slug` column (B) is where you enter the AtoM slugs.
-- The AtoM slug is the last part of the AtoM url that follows serverName.archives.sfu.ca/
+- The `slug` column (B) will be blank; this is where you enter the AtoM slugs.
+
+The AtoM slug is the last part of the AtoM url that follows `server_name.archives.sfu.ca/`
 - E.g. in `cottonwood.archives.sfu.ca/f-10-4-0-0-0-1` the slug is `f-10-4-0-0-0-1`.
-- In SFU AtoM, the slug is typically identical to the unit's reference code, with the "f-" prefix in lowercase.
+- In SFU AtoM, the slug is typically (but not always) identical to the unit's reference code, with the `f-` prefix in lowercase.
 
 Find the AtoM slugs of the existing descriptions and enter them into column B of the csv file, matching the slug to the appropriate filename.
 
@@ -128,6 +130,9 @@ This script is similar to the [DIP upload](#dip-upload) script, except it sends 
 ```
 $ dip-upload <server_name> <dip_file_path>
 ```
+
+**Use cases**
+- Digitization: you digitize previously described analog materials, have not yet cleared the records for access or copyright restrictions but you would like to send the digital object metadata to the existing Atom records to indicate to users that digital copies exist.
 
 ## Links
 The scripts were created by Alex Garnett. Source code and documentation are available on his GitHub site at: https://github.com/axfelix/dip-mungers.
