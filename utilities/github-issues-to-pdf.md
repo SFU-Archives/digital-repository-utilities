@@ -5,8 +5,8 @@ Outputs `Issues` from a GitHub repository as pdf files.
 
 **Contents**
 - [Description and use](#description-and-use)
-- [Install](#install)
-- [Run](#run)
+- [Installation](#installation)
+- [Usage](#usage)
 - [Links](#links)
 
 ## Description and use
@@ -16,7 +16,7 @@ SFU Archives uses this mainly with its [Software Development Priorities](https:/
 
 The script uses [nodejs](https://nodejs.org/en/), a form of command-line javascript. The script was developed by Alex Garnett and is maintained in its own [GitHub repository](https://github.com/axfelix/github-issues-to-pdf).
 
-## Install
+## Installation
 Open Terminal to install:
 1. Install node: `$ brew install node`.
 1. Clone the script library: `$ git clone https://github.com/axfelix/github-issues-to-pdf`.
@@ -31,7 +31,7 @@ Open Terminal to install:
 
 - When installing, you may get security warnings relating to `https-proxy-agent`. This is because the script was forked from a package that has some outdated dependencies; these are not critical because the script will only be run locally as a one-off and not as part of a server stack.
 
-## Run
+## Usage
 Run the script from Terminal:
 1. Navigate to script directory: `$ cd github-issues-to-pdf`.
 1. Run the script: `$ npm start`.
@@ -47,6 +47,6 @@ Run the script from Terminal:
 - The pdfs (one for each issue) are output to a folder in the script directory, `rendered_PDFs`; the folder will be created if it does not already exist.
 
 ## Links
-Source code on GitHub: https://github.com/axfelix/github-issues-to-pdf.
+The script was developed by Alex Garnett based on a fork from https://github.com/alexandervalencia/github-issues-to-pdf. Source code and documentation for the SFU script are available at: https://github.com/axfelix/github-issues-to-pdf. 
 
-###### Last updated: Oct 22, 2020
+###### Last updated: Nov 16, 2020
