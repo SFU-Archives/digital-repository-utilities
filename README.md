@@ -2,9 +2,11 @@
 
 This site provides documentation for the various software tools and scripts SFU Archives uses in its digital repository.
 
-- Access-to-Memory (AtoM): the Archives' online access platform and catalog of archival descriptions.
+Utility | Description
+------- | -----------
+Access-to-Memory (AtoM) | SFU Archives' online access platform and catalog of archival descriptions
 
-- [AIP and DIP scripts](utilities/aip-and-dip-scripts.md): command-line scripts for retrieving AIPs and DIPs from storage and upload DIPs and metadata to the access system (AtoM).
+[AIP and DIP scripts](utilities/aip-and-dip-scripts.md) | Command-line scripts for retrieving AIPs and DIPs from storage and upload DIPs and metadata to the access system (AtoM)
 
 - AIS database: custom FileMaker database used to manage information relating to accessions and AIPs.
 
@@ -17,6 +19,8 @@ This site provides documentation for the various software tools and scripts SFU 
 - ClamAV: open-source antivirus engine used to check for viruses and malware on files transferred to Archives.
 
 - ePADD: open-source software for processing and providing access to email archives.
+
+- Fixity: open-source utility for verifying checksums of stored packages.
 
 - [github-issues-to-pdf script](utilities/github-issues-to-pdf.md): command-line script used to output GitHub `Issues` as pdf files.
 
