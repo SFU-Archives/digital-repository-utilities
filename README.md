@@ -12,7 +12,7 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - Bagger: Desktop application for validating transfer packages received by Archives.
 
-- Brunnhilde: Characterization tool for analyzing files transferred to Archives.
+- [Brunnhilde](utilities/brunnhilde.md): Characterization tool for analyzing files transferred to Archives.
 
 - [ClamAV](utilities/clamav.md): Antivirus engine used to check for malware in digital transfers.
 
@@ -36,6 +36,6 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - SFU Vault: SFU's cloud service for file sharing and storage; used in digital transfer.
 
-- [Tree](utilities/Tree.md): Command-line utility for analyzing the directory structure of digital transfers.
+- [Tree](utilities/tree.md): Command-line utility for analyzing the directory structure of digital transfers.
 
-###### Last updated: Oct 30, 2020
+###### Last updated: Nov 16, 2020
