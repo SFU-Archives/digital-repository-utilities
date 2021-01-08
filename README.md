@@ -10,9 +10,9 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - Archivematica: SFU Archives' main digital preservation platform.
 
-- Bagger: Desktop application for validating transfer packages received by Archives.
+- [Bagger](utilities/bagger.md): Desktop application for validating transfer packages received by Archives.
 
-- [Brunnhilde](utilities/brunnhilde.md): Characterization tool for analyzing files transferred to Archives.
+- Brunnhilde: Characterization tool for analyzing files transferred to Archives.
 
 - [ClamAV](utilities/clamav.md): Antivirus engine used to check for malware in digital transfers.
 
@@ -38,4 +38,4 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - [Tree](utilities/tree.md): Command-line utility for analyzing the directory structure of digital transfers.
 
-###### Last updated: Nov 16, 2020
+###### Last updated: Jan 8, 2021
