@@ -1,9 +1,11 @@
 ###### [Digital Repository Utilities](../README.md)
 
 # ClamAV
+<img align="right" width="400" src="../screenshots/clamAV.png">
+
 **Contents**
 - [Description](#description)
-- [SFU use cases](#use-cases)
+- [SFU use cases](#sfu-use-cases)
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
@@ -72,4 +74,4 @@ $ clamscan -ri --log=<<path_to_log/log.txt>> <<transfer_folder>>
 ## Links
 - ClamAV website: https://www.clamav.net.
 
-###### Last updated: Jan 8, 2021
+###### Last updated: May 6, 2021
