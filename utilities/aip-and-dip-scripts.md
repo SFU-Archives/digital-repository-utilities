@@ -3,8 +3,9 @@
 # AIP and DIP Scripts
 Retrieve stored AIPs and DIPs, upload DIPs or DIP metadata to AtoM.
 
+These are command-line scripts to support ad-hoc retrieval of packages from Archivematica and upload to AtoM, by-passing the interfaces provided by those applications. In some cases, they provide a faster alternative to the application interface; in others, there is no interface for the required action and the command-line provides the only method.
+
 **Contents**
-- [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
   - [AIP retrieve](#aip-retrieve)
@@ -12,9 +13,6 @@ Retrieve stored AIPs and DIPs, upload DIPs or DIP metadata to AtoM.
   - [DIP upload](#dip-upload)
   - [DIP metadata upload](#dip-metadata-upload)
 - [Links](#links)
-
-## Description
-These are command-line scripts to support ad-hoc retrieval of packages from Archivematica and upload to AtoM, by-passing the interfaces provided by those applications. In some cases, they provide a faster alternative to the application interface; in others, there is no interface for the required action and the command-line provides the only method.
 
 ## Installation
 [AIP retrieve](#aip-retrieve) is an `scp` (secure copy) command that can be run from Terminal and does not need to be installed.

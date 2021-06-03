@@ -3,19 +3,15 @@
 # ClamAV
 <img align="right" width="400" src="../screenshots/clamAV.png">
 
+ClamAV is an open-source antivirus engine that scans files for viruses and malware.
+
+The Archives uses ClamAV in the digital transfer workflow to check transfer packages and remove infected files before ingest to the repository. If you find infected files in a given transfer, you should contact the producer to advise them of the situation.
+
 **Contents**
-- [Description](#description)
-- [SFU use cases](#sfu-use-cases)
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Links](#links)
-
-## Description
-ClamAV is an open-source antivirus engine that scans files for viruses and malware.
-
-## SFU use cases
-The Archives uses ClamAV in the digital transfer workflow to check transfer packages and remove infected files before ingest to the repository. If you find infected files in a given transfer, you should contact the producer to advise them of the situation.
 
 ## Installation
 Install ClamAV with `homebrew` (Mac users).

@@ -1,20 +1,14 @@
 ###### [Digital Repository Utilities](../README.md)
 
 # Tree
-Command-line utility for analyzing the directory structure of digital transfers.
+Tree is an open-source, command-line utility that generates a text representation of a directory structure.
+
+SFU Archives uses Tree in the digital transfer workflow to document the original structure of a transfer package to support later accessioning, appraisal, and description. The archivist typically captures only the folder structure and uploads the report to the [AIS database](ais.md) Validator module for further analysis.
 
 **Contents**
-- [Description](#description-and-use)
-- [SFU use cases](#sfu-use-cases)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Links](#links)
-
-## Description
-Tree is an oen-source, command-line utility that generates a text representation of a directory structure.
-
-## SFU use cases
-SFU Archives uses Tree in the digital transfer workflow to document the original structure of a transfer package to support later accessioning, appraisal, and description. The archivist typically captures only the folder structure and uploads the report to the FileAnalysis utility for further analysis.
 
 ## Installation
 Install with `homebrew`.

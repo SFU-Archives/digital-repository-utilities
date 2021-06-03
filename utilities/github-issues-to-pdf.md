@@ -1,20 +1,16 @@
 ###### [Digital Repository Utilities](../README.md)
 
 # github-issues-to-pdf Script
-Outputs `Issues` from a GitHub repository as pdf files.
-
-**Contents**
-- [Description and use](#description-and-use)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Links](#links)
-
-## Description and use
-The script creates a print-friendly pdf of the full comment string on a GitHub repository's `Issues`.
+This script creating print-friendly pdfs of the full comment string on a GitHub repository's `Issues`.
 
 SFU Archives uses this mainly with its [Software Development Priorities](https://github.com/SFU-Archives/software-development-priorities) repository, where software features for possible development are tracked as GitHub issues. The Archives creates periodic snapshots, typically at the end of a development contract or beginning of planning for a new one. The script outputs the full set of issues, which can then be consolidated in Acrobat as a single pdf file.
 
 The script uses [nodejs](https://nodejs.org/en/), a form of command-line javascript. The script was developed by Alex Garnett and is maintained in its own [GitHub repository](https://github.com/axfelix/github-issues-to-pdf).
+
+**Contents**
+- [Installation](#installation)
+- [Usage](#usage)
+- [Links](#links)
 
 ## Installation
 Open Terminal to install:
@@ -47,6 +43,6 @@ Run the script from Terminal:
 - The pdfs (one for each issue) are output to a folder in the script directory, `rendered_PDFs`; the folder will be created if it does not already exist.
 
 ## Links
-The script was developed by Alex Garnett based on a fork from https://github.com/alexandervalencia/github-issues-to-pdf. Source code and documentation for the SFU script are available at: https://github.com/axfelix/github-issues-to-pdf. 
+The script was developed by Alex Garnett based on a fork from https://github.com/alexandervalencia/github-issues-to-pdf. Source code and documentation for the SFU script are available at: https://github.com/axfelix/github-issues-to-pdf.
 
 ###### Last updated: Nov 16, 2020

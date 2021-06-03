@@ -1,0 +1,62 @@
+###### [Digital Repository Utilities](../README.md)
+
+# Contact Sheet Maker
+<img align="right" width="400" src="../screenshots/contact-sheet-maker-results.png">
+
+ContactSheetMaker is a command-line Python script developed by Kelsey Poloney (SFU Library). It takes a folder of images (typically digital photographs) and creates a set of thumbnail images (one for each file) as a multi-page pdf document. It then structures the parent folder so that it is ready for ingest to Archivematica.
+
+SFU Archives uses ContactSheetMaker when it receives transfers of folders that contain large numbers of photographs. Rather than uploading each photograph to AtoM, the processing archivist uses the script to create a "digital contact sheet" and uploads that instead. Researchers can easily browse the pdf sheet and identify any images for which they would like copies. An archivist can then deliver the original offline.
+
+The script was originally designed with a particular use case in mind: transfers of photos from campus units that function as official photographers (e.g. University Communications) and organize their files into folders representing photo shoots or projects. These folders often contain a very large number of very similar shots, only one or two of which may have been selected for publication / use. Typically the creators do not exercise any further appraisal (i.e. they do not destroy the non-selected images), they often do not document which files were selected, and it is not often possible to determine this years later. The Archives typically does not consider it feasible or desirable to do item-level appraisal and selection, but neither do we wish to flood SFU AtoM with a plethora of similar files. By uploading the contact sheet only, we provide simple access to all images, while allowing researchers to identify those they wish to get full copies of.
+
+## Contents
+- [Download](#download)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Links](#links)
+
+## Download
+Download the Python script as a [zip file here](../downloads/contact-sheet-maker.zip) or from [Kelsey Poloney's GitHub site](https://github.com/kpoloney/contact_sheet).
+
+Unzip and move the `contact_sheet.py` file to wherever you wish to store it.
+
+**Notes**
+- The script can be stored and run from any location on your computer.
+
+## Configuration
+No configuration required.
+
+## Usage
+<img align="right" width="400" src="../screenshots/contact-sheet-maker-terminal.png">
+
+Run the script by command line. You'll need to know the full file paths of the script and the target folder containing the photos to be processed.
+
+```
+$ python3 /path/to/contact_sheet.py
+```
+
+You will be prompted to enter the target folder path.
+```
+Enter folder location: /path/to/target/folder/
+```
+
+The script will:
+- Create a new sub-folder called `access`.
+- Generate two copies of pdf file called `contact-sheet.pdf`.
+- Place one copy of the pdf file in the `access` folder and one in the top-level directory.
+
+**Notes**
+- You can get the file paths of the script and the target folder by dragging them into the Terminal window.
+
+- Make sure to include the closing forward slash `/` on the target folder location.
+
+- The folder structure is ready for ingest to Archivematica: the existence of the `access` sub-folder tells Archivematica **not** to make access copies of the original images and to use the pdf file as the DIP sent to AtoM.
+
+- The script can be run on heterogeneous folders that contains files that are not images; these will be ignore.
+
+- The script is **not** recursive: the target folder **cannot contain sub-folders**.
+
+## Links
+- Developer's GitHub site: https://github.com/kpoloney/contact_sheet.
+
+###### Last updated: Jun 2, 2021

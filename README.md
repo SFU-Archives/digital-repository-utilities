@@ -16,6 +16,8 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - [ClamAV](utilities/clamav.md): Antivirus engine used to check for malware in digital transfers.
 
+- [Contact sheet maker](utilities/contact-sheet-maker.md): Python script to create a set of thumbnail images as a pdf document from a folder of digital photographs.
+
 - ePADD: Open-source software for processing and providing access to email archives.
 
 - Fixity: Open-source utility for verifying checksums of stored packages.
