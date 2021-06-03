@@ -28,7 +28,7 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - OfflineImap: Command-line utility for exporting email from an active system in `maildir` format.
 
-- rsync: Command-line tool for moving transfer packages.
+- [rsync](utilities/rsync.md): Command-line tool for moving transfer packages.
 
 - SFU MoveIt: Desktop utility used by SFU department and private donors to create transfer packages as bags with transfer metadata.
 
@@ -38,4 +38,4 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - [Tree](utilities/tree.md): Command-line utility for analyzing the directory structure of digital transfers.
 
-###### Last updated: May 6, 2021
+###### Last updated: Jun 2, 2021
