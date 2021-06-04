@@ -1,15 +1,15 @@
 ###### [Digital Repository Utilities](../README.md)
 
 # Contact Sheet Maker
-<img align="right" width="500" src="../screenshots/contact-sheet-maker-folder.png">
-
 ContactSheetMaker is a command-line Python script developed by Kelsey Poloney (SFU Library). It takes a folder of images (typically digital photographs) and creates a set of thumbnail images (one for each file) as a multi-page pdf document. It then structures the parent folder so that it is ready for ingest to Archivematica.
-
-<img align="right" width="400" src="../screenshots/contact-sheet-maker-pdf.png">
 
 The resulting pdf mimics the analog contact sheet, a positive print of all the negatives from a roll of film to facilitate scanning and selection of images. SFU Archives uses ContactSheetMaker when it receives transfers of folders that contain large numbers of photographs. Rather than uploading each photograph to [SFU AtoM](https://atom.archives.sfu.ca), the processing archivist uses the script to create a digital contact sheet and uploads that instead. Researchers can easily browse the pdf sheet and identify any images for which they would like copies. An archivist can then deliver the copies of the originals offline.
 
 The script can be used in many circumstance, but was originally designed with a particular use case in mind: transfers of photos from campus units that include staff photographers (e.g. University Communications).  These staff typically organize their files into folders representing photo shoots or projects. The folders often contain a very large number of very similar shots, only one or two of which may have been selected for publication / use. Typically the creators do not exercise any further appraisal (i.e. they do not destroy the non-selected images), they often do not document which files were selected, and it is not often possible to determine this years later. The Archives typically does not consider it feasible or desirable to do item-level appraisal and selection, but neither do we wish to flood [SFU AtoM](https://atom.archives.sfu.ca) with a plethora of similar files. By uploading the contact sheet only, we provide simple access to all images, while allowing researchers to identify those for which they wish to get full copies.
+
+<img align="right" width="400" src="../screenshots/contact-sheet-maker-pdf.png">
+
+<img align="right" width="500" src="../screenshots/contact-sheet-maker-folder.png">
 
 ## Contents
 - [Download](#download)
