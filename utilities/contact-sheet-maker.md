@@ -1,7 +1,7 @@
 ###### [Digital Repository Utilities](../README.md)
 
 # Contact Sheet Maker
-<img align="right" width="400" src="../screenshots/contact-sheet-maker-results.png">
+<img align="right" width="500" src="../screenshots/contact-sheet-maker-results.png">
 
 ContactSheetMaker is a command-line Python script developed by Kelsey Poloney (SFU Library). It takes a folder of images (typically digital photographs) and creates a set of thumbnail images (one for each file) as a multi-page pdf document. It then structures the parent folder so that it is ready for ingest to Archivematica.
 
