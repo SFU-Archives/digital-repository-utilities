@@ -24,7 +24,11 @@ Unzip and move the `contact_sheet.py` file to wherever you wish to store it.
 - The script can be stored and run from any location on your computer.
 
 ## Configuration
-No configuration required.
+The script looks for certain file extensions and ignores the rest. You can expand the list of extension by editing `line 17` on the script. Default extensions are:
+
+```
+png, jpg, jpeg, tiff, gif, jp2, jpm, jpx, bmd, pct, psd, tga
+```
 
 ## Usage
 <img align="right" width="400" src="../screenshots/contact-sheet-maker-folder.png">
