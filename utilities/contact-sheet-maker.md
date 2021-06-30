@@ -16,9 +16,9 @@ The script can be used in many circumstance, but was originally designed with a 
 - [Links](#links)
 
 ## Download
-Download the Python script as a [zip file here](../downloads/contact-sheet-maker.zip) or from [Kelsey Poloney's GitHub site](https://github.com/kpoloney/contact_sheet).
-
-Unzip and move the `contact_sheet.py` file to wherever you wish to store it.
+Download the Python script from [Kelsey Poloney's GitHub site](https://github.com/kpoloney/contact_sheet).
+- Click the green `Code` button and download zip file.
+- Unzip and move the `contact_sheet.py` file to wherever you wish to store it.
 
 **Notes**
 - The script can be stored and run from any location on your computer.
