@@ -64,4 +64,4 @@ The script:
 ## Links
 - Developer's GitHub site: https://github.com/kpoloney/contact_sheet.
 
-###### Last updated: Jun 4, 2021
+###### Last updated: Jun 30, 2021
