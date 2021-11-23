@@ -7,7 +7,7 @@ Bagger is open-source, java-based desktop application for creating, editing, and
 
 SFU Archives uses Bagger in its digital transfer workflow to validate transfer packages received and add validation metadata.
 
-Note that the Archives has its own preferred Bag-creating packager ([SFU MoveIt](sfu-moveit.md)) and uses Bagger only for validation purposes. The Archives has begun work on another app ([SFU ProveIt](sfu-proveit.md)) that will eventually take over these validation functions.
+Note that the Archives has its own preferred Bag-creating packager ([SFU MoveIt](sfu-moveit.md)) and uses Bagger only for validation purposes. The Archives has begun work on another app ([SFU ProveIt](sfu-proveit.md)) that may eventually take over these validation functions.
 
 There are a number of motivations for developing SFU-specific alternatives to Bagger. Bagger is designed to be a generic tool that can be used by any institution. SFU-themed apps, on the other hand, can focus the interface specifically on the requirements of the Archives' own workflows. Field labels exposed to end users are based on BagIt requirements, but do not require users to understand the BagIt spec and its terminology.
 
@@ -26,6 +26,11 @@ Download the latest release from the [Bagger GitHub page](https://github.com/Lib
 
 You can move the `bagger-2.8.1` folder to and run Bagger from any location on your local machine.
 - For consistency, Archives staff should store Bagger in their `Applications` folder.
+
+### Dependencies
+You will need to have a `Java Runtime Environment` installed in order to run Bagger.
+- If a JRE is not yet installed, the first time you try to run Bagger you will get an error message "Unable to locate a Java Runtime".
+- To install, go to the [Java.com website](https://java.com/en/download/) to download.
 
 ## Configuration
 There are no special configuration requirements. It is possible with Bagger to create and load customized metadata templates ("profiles"), but the Archives does not currently use this feature.
@@ -57,4 +62,4 @@ For more detail about these workflows, see the Archives' [digital transfer valid
 - [Bagger GitHub page](https://github.com/LibraryOfCongress/bagger).
 - [SFU Archives](https://github.com/SFU-Archives) > [Digital Transfer](https://github.com/SFU-Archives/digital-transfer) > [Procedures for Archives](https://github.com/SFU-Archives/digital-transfer/blob/master/procedures/standard-archives/00-introduction.md) > [Validation](https://github.com/SFU-Archives/digital-transfer/blob/master/procedures/standard-archives/03-validation.md)
 
-###### Last updated: May 6, 2021
+###### Last updated: Nov 23, 2021
