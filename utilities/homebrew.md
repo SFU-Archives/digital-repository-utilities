@@ -2,7 +2,7 @@
 
 # Homebrew
 ###### Status: under development
-<img align="right" width="400" src="../screenshots/homebrew.png">
+<img align="right" width="400" src="../screenshots/homebrew-image.png">
 
 **Homebrew** is an open-source package manager that simplifies installation, update, and removal of software on a Mac.
 
