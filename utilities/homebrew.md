@@ -12,8 +12,6 @@ SFU Archives uses Homebrew to install various open-source utilities and their de
 
 ## Contents
 - [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
 - [Links](#links)
 
 ## Installation
@@ -21,8 +19,10 @@ To check if Homebrew is already installed on your computer:
 - Open Terminal, run command `$ brew -v` (= version)
 - If Terminal returns `Command not found`, you do not have Homebrew installed.
 
-To install:
-- Open Terminal, run command `$ /bin/bash -c $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)`
+To install, open Terminal, run command:
+```
+$ /bin/bash -c $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+```
 
 ## Links
 - [Homebrew website](https://brew.sh)
