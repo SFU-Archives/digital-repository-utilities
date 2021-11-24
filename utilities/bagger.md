@@ -27,10 +27,10 @@ Download the latest release from the [Bagger GitHub page](https://github.com/Lib
 You can move the `bagger-2.8.1` folder to and run Bagger from any location on your local machine.
 - For consistency, Archives staff should store Bagger in their `Applications` folder.
 
-### Dependencies
+**Dependencies:**
 You will need to have a `Java Runtime Environment` installed in order to run Bagger.
 - If a JRE is not yet installed, the first time you try to run Bagger you will get an error message "Unable to locate a Java Runtime".
-- To install, go to the [Java.com website](https://java.com/en/download/) to download.
+- To install, go to the [Java website](https://java.com/en/download/) to download.
 
 ## Configuration
 There are no special configuration requirements. It is possible with Bagger to create and load customized metadata templates ("profiles"), but the Archives does not currently use this feature.

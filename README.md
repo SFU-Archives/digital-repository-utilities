@@ -24,6 +24,8 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - [github-issues-to-pdf script](utilities/github-issues-to-pdf.md): Command-line script used to output GitHub `Issues` as pdf files.
 
+- [Homebrew](utilities/homebrew.md): Open-source software package management system used to install various programs and command-line utilities on a Mac.
+
 - maildir2mbox script: Python script for converting email from `maildir` to `mbox` formats.
 
 - OfflineImap: Command-line utility for exporting email from an active system in `maildir` format.
@@ -38,4 +40,4 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - [Tree](utilities/tree.md): Command-line utility for analyzing the directory structure of digital transfers.
 
-###### Last updated: Jun 2, 2021
+###### Last updated: Nov 24, 2021
