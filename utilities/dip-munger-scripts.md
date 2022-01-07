@@ -1,17 +1,13 @@
 ###### [Digital Repository Utilities](../README.md)
 
-# AIP and DIP Scripts
-Retrieve stored AIPs and DIPs, upload DIPs or DIP metadata to AtoM.
-
-These are command-line scripts to support ad-hoc retrieval of packages from Archivematica and upload to AtoM, by-passing the interfaces provided by those applications. In some cases, they provide a faster alternative to the application interface; in others, there is no interface for the required action and the command-line provides the only method.
+# DIP Munger Scripts
+These are custom command-line scripts to support download of store DIP packages for direct upload to AtoM.
 
 **Contents**
 - [Installation](#installation)
-- [Usage](#usage)
-  - [AIP retrieve](#aip-retrieve)
-  - [DIP retrieve](#dip-retrieve)
-  - [DIP upload](#dip-upload)
-  - [DIP metadata upload](#dip-metadata-upload)
+- [DIP retrieve](#dip-retrieve)
+- [DIP upload](#dip-upload)
+- [DIP metadata upload](#dip-metadata-upload)
 - [Links](#links)
 
 ## Installation
