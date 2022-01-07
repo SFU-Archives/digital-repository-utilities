@@ -4,8 +4,6 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - Access-to-Memory (AtoM): SFU Archives' online access platform and catalog of archival descriptions
 
-- [AIP and DIP scripts](utilities/aip-and-dip-scripts.md): Command-line scripts for retrieving AIPs and DIPs from storage and upload DIPs and metadata to the access system (AtoM)
-
 - AIS database: Custom FileMaker database used to manage information relating to accessions (Archives module), AIPs (Repository module), analysis and validation of digital transfers (Validator module).
 
 - Archivematica: SFU Archives' main digital preservation platform.
@@ -18,21 +16,19 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - [Contact sheet maker](utilities/contact-sheet-maker.md): Python script to create a set of thumbnail images as a pdf document from a folder of digital photographs.
 
+- DIP munger scripts: Command-line scripts for retrieving DIPs from storage for upload (digital objects and / or metadata) to the access system (AtoM).
+
 - ePADD: Open-source software for processing and providing access to email archives.
 
 - Fixity: Open-source utility for verifying checksums of stored packages.
 
 - [github-issues-to-pdf script](utilities/github-issues-to-pdf.md): Command-line script used to output GitHub `Issues` as pdf files.
 
-<<<<<<< Updated upstream
 - [Homebrew](utilities/homebrew.md): Open-source software package management system used to install various programs and command-line utilities on a Mac.
 
 - maildir2mbox script: Python script for converting email from `maildir` to `mbox` formats.
-=======
-- [maildir2mbox script](utilities/maildir2mbox.md): Python script for converting email from `maildir` to `mbox` format.
 
-- [msg2eml script](utilities/msg2eml.md): Python script for converting `msg` email files to `eml` format.
->>>>>>> Stashed changes
+- msg2eml script: Python script for converting `msg` email files to `eml` format.
 
 - OfflineImap: Command-line utility for exporting email from an active system in `maildir` format.
 
