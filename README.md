@@ -22,7 +22,7 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - ePADD: open-source software for processing and providing access to email archives.
 
-- [Extent Calculator](https://sfuarchives.shinyapps.io/extent_calculator/): online app for calculating fonds and series extents from box types. [Documentation on AtoM Guidelines and Processing Resources site](https://github.com/SFU-Archives/atom-guidelines-processing-resources).
+- [Extent Calculator](https://sfuarchives.shinyapps.io/extent_calculator/): online app for calculating fonds and series extents from box types. [Documentation on AtoM Guidelines and Processing Resources site](https://github.com/SFU-Archives/atom-guidelines-processing-resources/blob/main/resources/extent-calculator.md).
 
 - Fixity: open-source utility for verifying checksums of stored packages.
 
@@ -34,7 +34,7 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - OfflineImap: command-line utility for exporting email from an active system in `maildir` format.
 
-- [Resolution Calculator](https://sfuarchives.shinyapps.io/resolution_calculator/): online app for calculating scanning resolutions for digitizing photographic materials (negatives, slides, prints). Documentation on AtoM Guidelines and Processing Resources site.
+- [Resolution Calculator](https://sfuarchives.shinyapps.io/resolution_calculator/): online app for calculating scanning resolutions for digitizing photographic materials (negatives, slides, prints). [Documentation on AtoM Guidelines and Processing Resources site](https://github.com/SFU-Archives/atom-guidelines-processing-resources/blob/main/resources/resolution-calculator.md).
 
 - SFU MoveIt: desktop utility used by SFU department and private donors to create transfer packages as bags with transfer metadata.
 
