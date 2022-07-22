@@ -18,7 +18,7 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - [Contact sheet maker](utilities/contact-sheet-maker.md): Python script to create a set of thumbnail images as a pdf document from a folder of digital photographs.
 
-- [DIP munger scripts](utilities/dip-munger-scrpts.md): command-line scripts for retrieving DIPs from storage for upload (digital objects and / or metadata) to the access system (AtoM).
+- [DIP munger scripts](utilities/dip-munger-scripts.md): command-line scripts for retrieving DIPs from storage for upload (digital objects and / or metadata) to the access system (AtoM).
 
 - ePADD: open-source software for processing and providing access to email archives.
 
@@ -45,4 +45,4 @@ This site provides documentation for the various software tools and scripts SFU 
 - [Tree](utilities/tree.md): command-line utility for analyzing the directory structure of digital transfers.
 
 
-###### Last updated: Apr 5, 2022
+###### Last updated: Jul 22, 2022
