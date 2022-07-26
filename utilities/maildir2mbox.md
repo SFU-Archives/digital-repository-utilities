@@ -1,11 +1,11 @@
 ###### [Digital Repository Utilities](../README.md)
 
-# maildir2mbox Script
+# maildir2mbox
 `maildir2mbox` is an command line Python script adapted by SFU Archives ca. 2013 from an [existing project](http://yergler.net/blog/2010/06/06/batteries-included-or-maildir-to-mbox-again/) originally created by Nathan Yergler in June 2010 and ported to Python 3 by Philippe Fremy. SFU's Alex Garnett made additional modifications in 2019.
 
 The Archives has used the script to convert `maildir` exported from SFU Mail by OfflineImap to `mbox` format for ingest into Archivematica and ePADD.
 
-Note that as of June 2022, SFU Archives has also used the proprietary software Emailchemy to perform conversions. Emailchemy's user interface makes it somewhat easier to use, and it also supports conversions to and from other email formats.
+Note that as of June 2022, SFU Archives also uses the proprietary software Emailchemy to perform conversions. Emailchemy's user interface makes it somewhat easier to use, and it also supports conversions to and from other email formats.
 
 ## Contents
 - [Download](#download)
