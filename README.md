@@ -28,11 +28,11 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - [Homebrew](utilities/homebrew.md): Open-source software package management system used to install various programs and command-line utilities on a Mac.
 
-- [maildir2mbox script](utilities/maildir2mbox-script.md): Python script for converting email from `maildir` to `mbox` formats.
+- [maildir2mbox script](utilities/maildir2mbox.md): Python script for converting email from `maildir` to `mbox` formats.
 
 - msg2eml script: Python script for converting `msg` email files to `eml` format.
 
-- [OfflineIMAP](https://github.com/SFU-Archives/email-archiving/blob/master/archivists/overview.md): command-line utility for exporting email from an active system in `maildir` format.
+- [OfflineIMAP](offlineimap.md): command-line utility for exporting email from an active system in `maildir` format.
 
 - [Resolution Calculator](https://sfuarchives.shinyapps.io/resolution_calculator/): online app for calculating scanning resolutions for digitizing photographic materials (negatives, slides, prints). [Documentation on AtoM Guidelines and Processing Resources site](https://github.com/SFU-Archives/atom-guidelines-processing-resources/blob/main/resources/resolution-calculator.md).
 
