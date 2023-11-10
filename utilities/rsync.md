@@ -26,36 +26,27 @@ $ brew install rsync
 No special configuration needed.
 
 ## Usage
-In the Archives' workflow, an archivist validates a transfer package, re-packages it with [Bagger](bagger.md) to include accession and validation metadata, copies it to a staging server on SFU Cloud, then ingests it to Archivematica backlog.
-
-Prior to June 2021, archivists could upload packages directly to the staging server, either via `rsync` or with an FTP client like Cyberduck. With the migration to SFU Cloud, however, you must first `ssh` into the Archives' bastion server, then from there copy the package using `rsync`. Both operations require use of command line; you can no longer use an FTP client.
+Archivists must periodically copy digital objects from external drives to their desktops for validation or processing. `rsync` can be used to ensure timestamps are preserved and checksums are validated.
 
 **Command:**
 
 ```
-$ rsync -vhrlt --checksum <<transfer-package>> <<user-name>>@<<staging-server>>/var/transfersource/ | tee <<log-file.txt>>
+$ rsync --archive --verbose --checksum <path/to/source/> <path/to/destination/>
 ```
+Flags:
+- `--archive` = archive mode = -rlptgoD
+- `--verbose` = prints output to Terminal screen
+- `--checksum` = compares checksums before / after copying
 
-- `-v` = verbose: results for each file printed to your Terminal window
+Flags included in the `archive` flag:
+- `-r` = recursive; gets all sub-folders.
+- `-l` = preserves symlinks (symbolic links to other folders).
+- `-p` = preserves permissions
+- `-t` = preserves timestamps
+- `-g` = preserves group
+- `-o` = preserves owner
+- `-D` = preserves device files
 
-- `-h` = human-readable output
-
-- `-r` = recursive: gets all sub-folders and their contents
-
-- `-l` = symlinks
-
-- `-t` = timestamps: preserves files' original timestamps
-
-- `--checksum` = generates checksums
-
-- `transfer-package` = full directory path of the package to be copied;
-
-- `staging-server` = VM on SFU Cloud; you will be prompted for your SFU computing password
-
-- `tee` = name of log file (optional)
-
-**Notes**
-- If you use a log file (`tee` flag), rsync will output results for each file copied in both your Terminal window and on the log file; you need to create the log file **before** running the command (i.e. it needs to exist).
 
 ## Links
 - Homebrew rsync page: https://formulae.brew.sh/formula/rsync
