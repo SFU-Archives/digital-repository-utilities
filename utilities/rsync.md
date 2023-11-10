@@ -2,8 +2,6 @@
 
 # rsync
 ###### Status: under development
-<img align="right" width="400" src="../screenshots/rsync.png">
-
 `rsync` is a command-line utility for copying files and for syncing files and directories from two different systems.
 
 SFU Archives uses rsync when moving data around across external drives and desktops (e.g. copying a digital transfer to / from an external drive used for temporary storage)
@@ -64,4 +62,4 @@ $ rsync -vhrlt --checksum <<transfer-package>> <<user-name>>@<<staging-server>>/
 
 - rsync manual page: https://linux.die.net/man/1/rsync
 
-###### Last updated: Jun 2, 2021
+###### Last updated: Nov 10, 2023
