@@ -6,7 +6,7 @@
 
 `rsync` is a command-line utility for copying files and for syncing files and directories from two different systems.
 
-SFU Archives uses rsync in its digital transfer workflow: use rsync to upload validated transfer packages to the Archives' staging server for ingest to Archivematica.
+SFU Archives uses rsync when moving data around across external drives and desktops (e.g. copying a digital transfer to / from an external drive used for temporary storage)
 
 ## Contents
 - [Installation](#installation)

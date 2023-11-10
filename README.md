@@ -2,11 +2,11 @@
 
 This site provides documentation for the various software tools and scripts SFU Archives uses in its digital repository. Please note that it is a work in-progress, with regular updates as new sections are completed.
 
-- Access-to-Memory (AtoM): SFU Archives' online access platform and catalog of archival descriptions
+- Access-to-Memory (AtoM): SFU Archives' online access platform and catalog of archival descriptions. [Documentation on AtoM Guidelines and Processing Resources site](https://github.com/SFU-Archives/atom-guidelines-processing-resources).
 
-- AIS database: custom FileMaker database used to manage information relating to accessions (Archives module), AIPs (Repository module), analysis and validation of digital transfers (Validator module).
+- AIS database: custom FileMaker database used to manage information relating to accessions (Archives module) and AIPs (Repository module). [Documentation on the AIS Database site](https://github.com/SFU-Archives/ais-database).
 
-- Archivematica: SFU Archives' main digital preservation platform.
+- Archivematica: SFU Archives' main digital preservation platform. [Documentation on the Archivematica Manual site](https://github.com/SFU-Archives/archivematica-manual).
 
 - [AtoM Importer](https://sfuarchives.shinyapps.io/atom_import/): online app for transforming custom Excel spreadsheets to the standard AtoM csv import template. [Documentation on AtoM Guidelines and Processing Resources site](https://github.com/SFU-Archives/atom-guidelines-processing-resources/blob/main/resources/atom-importer.md).
 
@@ -36,13 +36,13 @@ This site provides documentation for the various software tools and scripts SFU 
 
 - [Resolution Calculator](https://sfuarchives.shinyapps.io/resolution_calculator/): online app for calculating scanning resolutions for digitizing photographic materials (negatives, slides, prints). [Documentation on AtoM Guidelines and Processing Resources site](https://github.com/SFU-Archives/atom-guidelines-processing-resources/blob/main/resources/resolution-calculator.md).
 
-- SFU MoveIt: desktop utility used by SFU department and private donors to create transfer packages as bags with transfer metadata.
+- [rsync](utilities/rsync.md): command-line utility for copying and moving digital files.
 
-- SFU ProveIt: desktop utility for validating transfer packages received by Archives.
+- SFU MoveIt: desktop utility used by SFU department and private donors to create transfer packages as bags with transfer metadata; [more information on the Archives website](https://www.sfu.ca/archives/digital-preservation/sfu-moveit.html). The Archives retired the app in the Fall of 2023 and is investigating possible replacements.
 
 - SFU Vault: SFU's cloud service for file sharing and storage; used in digital transfer.
 
 - [Tree](utilities/tree.md): command-line utility for analyzing the directory structure of digital transfers.
 
 
-###### Last updated: Jul 26, 2022
+###### Last updated: Nov 10, 2023
