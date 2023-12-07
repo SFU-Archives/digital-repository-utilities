@@ -22,7 +22,7 @@
     "*"
   ],
   "BagIt-Profile-Info": {
-    "BagIt-Profile-Identifier": "https://www.sfu.ca/archives.html/university-records-v1.json",
+    "BagIt-Profile-Identifier": "https://github.com/SFU-Archives/digital-repository-utilities/blob/master/bagit-profiles/profile-university-transfers-v1.0.json",
     "BagIt-Profile-Version": "",
     "Contact-Email": "archives@sfu.ca",
     "Contact-Name": "R. Dancy",
