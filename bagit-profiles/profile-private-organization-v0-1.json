@@ -1,0 +1,80 @@
+{
+  "Accept-BagIt-Version": [
+    "0.97",
+    "1.0"
+  ],
+  "Accept-Serialization": [
+    "application/tar"
+  ],
+  "Allow-Fetch.txt": false,
+  "Serialization": "required",
+  "Manifests-Allowed": [
+    "md5",
+    "sha256"
+  ],
+  "Tag-Manifests-Allowed": [
+    "md5",
+    "sha256"
+  ],
+  "Manifests-Required": [
+    "sha256"
+  ],
+  "Tag-Manifests-Required": [],
+  "Tag-Files-Allowed": [
+    "*"
+  ],
+  "BagIt-Profile-Info": {
+    "BagIt-Profile-Identifier": "https://raw.githubusercontent.com/SFU-Archives/digital-repository-utilities/master/bagit-profiles/profile-private-organization-v0-1.json",
+    "BagIt-Profile-Version": "",
+    "Contact-Email": "archives@sfu.ca",
+    "Contact-Name": "R. Dancy",
+    "External-Description": "Non-SFU organization transfer",
+    "Source-Organization": "www.sfu.ca/archives.html",
+    "Version": "0.1"
+  },
+  "Bag-Info": {
+    "Bag-Count": {
+      "required": false
+    },
+    "Bag-Size": {
+      "required": true
+    },
+    "Bagging-Date": {
+      "required": true
+    },
+    "Bagging-Software": {
+      "required": true
+    },
+    "Contact-Email": {
+      "required": true
+    },
+    "Contact-Name": {
+      "required": true
+    },
+    "Contact-Phone": {
+      "required": false
+    },
+    "External-Description": {
+      "required": true
+    },
+    "External-Identifier": {
+      "required": false
+    },
+    "Payload-Oxum": {
+      "required": false
+    },
+    "Source-Organization": {
+      "required": true
+    },
+    "Collection-Notice": {
+      "required": true
+    },
+    "Contact-Position-Title": {
+      "required": false
+    },
+    "Bag-Group-Identifier": {
+      "required": false
+    }
+  },
+  "Tag-Files-Required": []
+}
