@@ -26,7 +26,7 @@
     "BagIt-Profile-Version": "",
     "Contact-Email": "archives@sfu.ca",
     "Contact-Name": "R. Dancy",
-    "External-Description": "BagIt profile for transfers of university records from SFU departments to SFU Archives",
+    "External-Description": "SFU university records transfers",
     "Source-Organization": "www.sfu.ca/archives.html",
     "Version": "0.1"
   },
