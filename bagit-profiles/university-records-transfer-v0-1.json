@@ -3,9 +3,9 @@
   "appSettings": [],
   "bagItProfiles": [
     {
-      "id": "504b7312-dfc4-49d8-9d51-17e661881bb0",
-      "name": "SFU Archives Transfer - Non-SFU Organizations",
-      "description": "Non-SFU organization transfer",
+      "id": "25435c52-9234-4c0c-a195-5bc52f1d47bf",
+      "name": "SFU university records transfer",
+      "description": "BagIt Profile for transfers of university records from SFU departments to SFU Archives",
       "acceptBagItVersion": [
         "0.97",
         "1.0"
@@ -15,17 +15,15 @@
       ],
       "allowFetchTxt": false,
       "bagItProfileInfo": {
-        "bagItProfileIdentifier": "https://raw.githubusercontent.com/SFU-Archives/digital-repository-utilities/master/bagit-profiles/profile-private-organization-v0-1.json",
+        "bagItProfileIdentifier": "https://raw.githubusercontent.com/SFU-Archives/digital-repository-utilities/master/bagit-profiles/university-records-transfer-v0-1.json",
         "bagItProfileVersion": "",
         "contactEmail": "archives@sfu.ca",
         "contactName": "R. Dancy",
-        "externalDescription": "Non-SFU organization transfer",
+        "externalDescription": "SFU university records transfers",
         "sourceOrganization": "www.sfu.ca/archives.html",
         "version": "0.1"
       },
-      "manifestsRequired": [
-        "sha256"
-      ],
+      "manifestsRequired": [],
       "manifestsAllowed": [
         "md5",
         "sha256"
@@ -40,7 +38,7 @@
       ],
       "tags": [
         {
-          "id": "dc6ce11d-c04b-48e2-9605-0e7330e3a72c",
+          "id": "e4a7bde6-07ae-426f-9a0d-7e36bcf0d61e",
           "tagFile": "bagit.txt",
           "tagName": "BagIt-Version",
           "required": true,
@@ -57,7 +55,7 @@
           "wasAddedForJob": false
         },
         {
-          "id": "16d2e0af-a7f7-444c-a3ce-7cebacb1bebe",
+          "id": "291c6bdb-2312-4386-8a06-46aa23e62ba4",
           "tagFile": "bagit.txt",
           "tagName": "Tag-File-Character-Encoding",
           "required": true,
@@ -71,21 +69,7 @@
           "wasAddedForJob": false
         },
         {
-          "id": "cf6ee10a-0eb2-43ff-9fda-a79218ad8c32",
-          "tagFile": "bag-info.txt",
-          "tagName": "Bag-Count",
-          "required": false,
-          "values": [],
-          "defaultValue": "",
-          "userValue": "",
-          "help": "E.g. \"1 of 3\"; use only if transferring more than 1 bag; give bag number + \"of\" + total bags (\"N of T\")",
-          "isBuiltIn": false,
-          "isUserAddedFile": false,
-          "isUserAddedTag": false,
-          "wasAddedForJob": false
-        },
-        {
-          "id": "528919fa-7e16-454c-b127-e38b9c460a93",
+          "id": "24408f4c-2e4e-4600-954b-b2b2a3777192",
           "tagFile": "bag-info.txt",
           "tagName": "Bag-Size",
           "required": true,
@@ -99,7 +83,7 @@
           "wasAddedForJob": false
         },
         {
-          "id": "67ea6da5-5dd7-4354-8306-517155cc7a48",
+          "id": "5267cb23-83a1-4bda-a7e1-8e9d66217ab6",
           "tagFile": "bag-info.txt",
           "tagName": "Bagging-Date",
           "required": true,
@@ -113,7 +97,7 @@
           "wasAddedForJob": false
         },
         {
-          "id": "ddd9b524-a717-4596-9551-391802994d49",
+          "id": "2bc4a36d-a9f4-486e-a35c-0183f7d902f0",
           "tagFile": "bag-info.txt",
           "tagName": "Bagging-Software",
           "required": true,
@@ -127,49 +111,49 @@
           "wasAddedForJob": false
         },
         {
-          "id": "68c060f2-79f7-4a83-b075-ebe7f0d561fc",
+          "id": "611bb0f7-b7b4-471a-be36-baab85296503",
           "tagFile": "bag-info.txt",
           "tagName": "Contact-Email",
           "required": true,
           "values": [],
           "defaultValue": "",
           "userValue": "",
-          "help": "Sender's email address; used by the Archives to follow up with any questions about the transfer",
+          "help": "Sender's email address; used by the Archives in case of follow-up with any questions about the transfer",
           "isBuiltIn": false,
           "isUserAddedFile": false,
           "isUserAddedTag": false,
           "wasAddedForJob": false
         },
         {
-          "id": "e628b283-de4e-483b-a8d0-34b09d2f9940",
+          "id": "d886bb71-fa7e-45ac-b850-b1f084e0ba09",
           "tagFile": "bag-info.txt",
           "tagName": "Contact-Name",
           "required": true,
           "values": [],
           "defaultValue": "",
           "userValue": "",
-          "help": "Sender's name; should be the person responsible for the content transfer and the person whom the Archives can contact with any follow-up questions about the transfer",
+          "help": "Sender's name; should be the person responsible for the contents of the transfer and the person with whom the Archives can follow-up with questions about the transfer",
           "isBuiltIn": false,
           "isUserAddedFile": false,
           "isUserAddedTag": false,
           "wasAddedForJob": false
         },
         {
-          "id": "71c2fc89-8584-477d-a335-823473379c33",
+          "id": "164c29e5-a221-4496-9b06-520fc546166a",
           "tagFile": "bag-info.txt",
           "tagName": "Contact-Phone",
           "required": false,
           "values": [],
           "defaultValue": "",
           "userValue": "",
-          "help": "Sender's phone number; used by the Archives to follow up with any questions about the transfer",
+          "help": "Sender's phone number; used by the Archives in case of follow-up with any questions about the transfer",
           "isBuiltIn": false,
           "isUserAddedFile": false,
           "isUserAddedTag": false,
           "wasAddedForJob": false
         },
         {
-          "id": "30b5e92a-4904-4c93-816e-fa78c4589f2c",
+          "id": "55c086ba-193d-4ee0-8491-d3dbc9f353b4",
           "tagFile": "bag-info.txt",
           "tagName": "External-Description",
           "required": true,
@@ -183,84 +167,116 @@
           "wasAddedForJob": false
         },
         {
-          "id": "df03b5ec-09a5-454d-9aa1-84f422e3fbf7",
+          "id": "d6b30942-dbc5-4f2a-9f30-515ddc5d1788",
           "tagFile": "bag-info.txt",
           "tagName": "External-Identifier",
           "required": false,
           "values": [],
           "defaultValue": "",
           "userValue": "",
-          "help": "Unique identifier for the transfer as assigned by the sender organization; leave blank if not applicable",
+          "help": "Unique identifier for the transfer as assigned by the sender department; leave blank if not applicable",
           "isBuiltIn": false,
           "isUserAddedFile": false,
           "isUserAddedTag": false,
           "wasAddedForJob": false
         },
         {
-          "id": "565e7904-33c4-40d6-a7ed-0ba339804d77",
+          "id": "b67ddefc-ca16-41bc-a226-6b6652786c51",
           "tagFile": "bag-info.txt",
           "tagName": "Payload-Oxum",
           "required": false,
           "values": [],
           "defaultValue": "",
           "userValue": "",
-          "help": "Automatically calculated by the app. Represents the \"octetstream sum\" of the payload (contents transferred), intended for the purpose of quickly detecting incomplete bags before performing checksum validation.",
+          "help": "Automatically calculated by the app. Represents the \"octetstream sum\" of the payload (contents transferred), intended for the purpose of quickly detecting incomplete bags before performing checksum validation",
           "isBuiltIn": false,
           "isUserAddedFile": false,
           "isUserAddedTag": false,
           "wasAddedForJob": false
         },
         {
-          "id": "d172b86a-77ab-4ee9-bde4-dc103acec80d",
+          "id": "34734c78-8417-49d3-8a98-9facbf06b593",
           "tagFile": "bag-info.txt",
           "tagName": "Source-Organization",
           "required": true,
           "values": [],
           "defaultValue": "",
           "userValue": "",
-          "help": "Name of the sender organization whose records are being transferred",
+          "help": "Name of the SFU department or unit whose records are being transferred",
           "isBuiltIn": false,
           "isUserAddedFile": false,
           "isUserAddedTag": false,
           "wasAddedForJob": false
         },
         {
-          "id": "a59678b0-b507-4d35-80b0-6816d61b3a82",
+          "id": "e238588a-5bfb-473f-b9ad-ca9e082818e2",
           "tagFile": "bag-info.txt",
-          "tagName": "Collection-Notice",
-          "required": true,
+          "tagName": "RRSDA",
+          "required": false,
           "values": [],
-          "defaultValue": "This app collects personal information on behalf of SFU under the authority of the University Act (RSBC 1996, c.468) and the Freedom of Information and Protection of Privacy Act (RSBC 1996, c.165). The personal information collected includes your name, position title, telephone number, and email address.  The information is related directly to and needed by the University to verify users' authority to transfer records to the Archives and to follow up with questions about the contents of the transfer and its suitability for long-term archival preservation. As a user of an SFU Archives service, you may also be contacted in the future to participate in the evaluation of the effectiveness of the service. The information will be used by SFU Archives staff; it may be disclosed to other members of your parent organization in the context of questions about the circumstances of the transfer in the event that these later arise.  If you have any questions about the collection and use of this information please contact the University Archivist and Coordinator of Information and Privacy, Paul Hebbard, pgh@sfu.ca, 778-782-2313.",
+          "defaultValue": "",
           "userValue": "",
-          "help": "Authority for the collection of personal information by this app",
+          "help": "Records Retention Schedule and Disposal Authority number that applies to the records being transferred; give only the RRSDA number in the form NNNN-NNN, e.g 1999-005",
           "isBuiltIn": false,
           "isUserAddedFile": false,
           "isUserAddedTag": true,
           "wasAddedForJob": false
         },
         {
-          "id": "c4992d51-8631-4763-8279-fce47f84d486",
+          "id": "316b9470-3eb0-43fd-9a5c-bae2dcac8875",
           "tagFile": "bag-info.txt",
           "tagName": "Contact-Position-Title",
           "required": false,
           "values": [],
           "defaultValue": "",
           "userValue": "",
-          "help": "Sender's job title within the organization",
+          "help": "Sender's job title within the university",
           "isBuiltIn": false,
           "isUserAddedFile": false,
           "isUserAddedTag": true,
           "wasAddedForJob": false
         },
         {
-          "id": "0af062e2-952e-4d9f-9f52-6276d3cab2e5",
+          "id": "7a9eda29-829c-4111-a684-958e2e4752e6",
+          "tagFile": "bag-info.txt",
+          "tagName": "Bag-Count",
+          "required": false,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "E.g. \"1 of 3\"; use only if transferring more than 1 bag; give bag number + \"of\" + total bags (\"N of T\")",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": true,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "80e0fde4-c44e-4627-a195-6f2aef8dd7f1",
           "tagFile": "bag-info.txt",
           "tagName": "Bag-Group-Identifier",
           "required": false,
           "values": [],
           "defaultValue": "",
           "userValue": "",
-          "help": "Accession number supplied by Archives; contact the Archives to obtain authorization and an Accession Number; can be left blank if not applicable",
+          "help": "Transfer Number supplied by Archives; contact the Archives before transfer to obtain authorization and a Transfer Number",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": true,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "6bdcfc7e-4338-43ed-8b76-5e17b17abaed",
+          "tagFile": "bag-info.txt",
+          "tagName": "Organization-Address",
+          "required": true,
+          "values": [
+            "SFU Burnaby",
+            "SFU Surrey",
+            "SFU Vancouver"
+          ],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Sender department's campus",
           "isBuiltIn": false,
           "isUserAddedFile": false,
           "isUserAddedTag": true,
@@ -268,12 +284,48 @@
         }
       ],
       "serialization": "required",
-      "baseProfileId": null,
+      "baseProfileId": "73d1b307-4d6b-494b-b0c9-a8595222ae5a",
       "isBuiltIn": false,
       "tarDirMustMatchName": true
     }
   ],
-  "questions": [],
+  "questions": [
+    {
+      "id": "25a0cdbb-58d3-485b-bcc2-e12ccd224f4c",
+      "prompt": "If you want to store your name as a default value, enter it here",
+      "objType": "BagItProfile",
+      "objId": "25435c52-9234-4c0c-a195-5bc52f1d47bf",
+      "field": "d886bb71-fa7e-45ac-b850-b1f084e0ba09"
+    },
+    {
+      "id": "f94bba3d-96ba-458c-b9e8-6394dd61b39f",
+      "prompt": "If you want to store your email address as a default value, enter it here",
+      "objType": "BagItProfile",
+      "objId": "25435c52-9234-4c0c-a195-5bc52f1d47bf",
+      "field": "611bb0f7-b7b4-471a-be36-baab85296503"
+    },
+    {
+      "id": "10f95b84-daac-42be-9cac-c26f0003a4db",
+      "prompt": "If you want to store your position title as a default value, enter it here",
+      "objType": "BagItProfile",
+      "objId": "25435c52-9234-4c0c-a195-5bc52f1d47bf",
+      "field": "316b9470-3eb0-43fd-9a5c-bae2dcac8875"
+    },
+    {
+      "id": "5a6b4160-0d07-46e2-b331-f84151389dfc",
+      "prompt": "If you want to store your department's name as a default value, enter it here",
+      "objType": "BagItProfile",
+      "objId": "25435c52-9234-4c0c-a195-5bc52f1d47bf",
+      "field": "34734c78-8417-49d3-8a98-9facbf06b593"
+    },
+    {
+      "id": "892b92bc-a9e7-45dc-8f6b-7ca5a526cae4",
+      "prompt": "If you want to store your department's campus, select it here",
+      "objType": "BagItProfile",
+      "objId": "25435c52-9234-4c0c-a195-5bc52f1d47bf",
+      "field": "6bdcfc7e-4338-43ed-8b76-5e17b17abaed"
+    }
+  ],
   "remoteRepositories": [],
   "storageServices": []
 }

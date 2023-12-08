@@ -1,0 +1,267 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "appSettings": [],
+  "bagItProfiles": [
+    {
+      "id": "526599cc-1bf8-48bf-a4a7-e0649c538706",
+      "name": "Personal archives transfer",
+      "description": "BagIt profile for transfers of personal archives from private individuals to SFU Archives",
+      "acceptBagItVersion": [
+        "0.97",
+        "1.0"
+      ],
+      "acceptSerialization": [
+        "application/tar"
+      ],
+      "allowFetchTxt": false,
+      "bagItProfileInfo": {
+        "bagItProfileIdentifier": "https://raw.githubusercontent.com/SFU-Archives/digital-repository-utilities/master/bagit-profiles/personal-archives-transfer-v0-1.json",
+        "bagItProfileVersion": "",
+        "contactEmail": "archives@sfu.ca",
+        "contactName": "R. Dancy",
+        "externalDescription": "Personal archives transfer",
+        "sourceOrganization": "www.sfu.ca/archives.html",
+        "version": "1.0"
+      },
+      "manifestsRequired": [
+        "md5",
+        "sha256"
+      ],
+      "manifestsAllowed": [
+        "md5",
+        "sha256"
+      ],
+      "tagManifestsRequired": [],
+      "tagManifestsAllowed": [
+        "md5",
+        "sha256"
+      ],
+      "tagFilesAllowed": [
+        "*"
+      ],
+      "tags": [
+        {
+          "id": "b3e65824-4cfa-4e49-bf71-9fcb60b680fe",
+          "tagFile": "bagit.txt",
+          "tagName": "BagIt-Version",
+          "required": true,
+          "values": [
+            "0.97",
+            "1.0"
+          ],
+          "defaultValue": "0.97",
+          "userValue": "",
+          "help": "Which version of the BagIt specification describes this bag's format?",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "4890e127-e1d0-47dc-ba74-21f8dbdf13d6",
+          "tagFile": "bagit.txt",
+          "tagName": "Tag-File-Character-Encoding",
+          "required": true,
+          "values": [],
+          "defaultValue": "UTF-8",
+          "userValue": "",
+          "help": "How are this bag's plain-text tag files encoded? (Hint: usually UTF-8)",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "8438c257-13b0-47af-96d3-0514febb533c",
+          "tagFile": "bag-info.txt",
+          "tagName": "Bag-Count",
+          "required": false,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "E.g. \"1 of 3\"; use only if transferring more than 1 bag; give bag number + \"of\" + total bags (\"N of T\")",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "8d33dc7b-2d87-4149-a6ef-5a8d97be872d",
+          "tagFile": "bag-info.txt",
+          "tagName": "Bag-Group-Identifier",
+          "required": false,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Accession Number supplied by Archives; contact the Archives before transfer to obtain authorization and an Accession Number",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "8e80a536-36f0-426e-bf99-16c5097f3316",
+          "tagFile": "bag-info.txt",
+          "tagName": "Bag-Size",
+          "required": true,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Calculated automatically by app. Represents the size of the bag transferred",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "6cdb495a-c198-4dcb-b72d-bd32acdcc8cd",
+          "tagFile": "bag-info.txt",
+          "tagName": "Bagging-Date",
+          "required": true,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Automatically supplied by the app. Represents the date the content was bagged in preparation for transfer",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "6f0cd232-fdb4-484a-81f2-40700482caa4",
+          "tagFile": "bag-info.txt",
+          "tagName": "Bagging-Software",
+          "required": true,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Automatically supplied by the app. Represents the software used to create the bag",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "bc7e35d6-babc-4bb3-9883-c27c1948b188",
+          "tagFile": "bag-info.txt",
+          "tagName": "Contact-Email",
+          "required": true,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Sender's email address; used by the Archives in case of follow-up with any questions about the transfer",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "adc872ec-cb3f-4b56-b7e9-2d8c00986456",
+          "tagFile": "bag-info.txt",
+          "tagName": "Contact-Name",
+          "required": true,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Sender's name; should be the person responsible for the contents of the transfer and the person with whom the Archives can follow-up with questions about the transfer",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "d43ef0ae-bd76-4ac2-807d-6242f193f9de",
+          "tagFile": "bag-info.txt",
+          "tagName": "Contact-Phone",
+          "required": false,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Sender's phone number; used by the Archives in case of follow-up with any questions about the transfer",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "4d377fd8-39bf-4343-9cc6-75a479a524f9",
+          "tagFile": "bag-info.txt",
+          "tagName": "External-Description",
+          "required": true,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Brief description of the contents of the transfer",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "f0d59a62-d2a5-4c69-b832-4161c694f840",
+          "tagFile": "bag-info.txt",
+          "tagName": "External-Identifier",
+          "required": false,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Unique identifier for the transfer as assigned by the sender organization / department; leave blank if not applicable",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "fcf4e9be-83eb-4b24-9210-85ae777fb371",
+          "tagFile": "bag-info.txt",
+          "tagName": "Payload-Oxum",
+          "required": true,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Automatically calculated by the app. Represents the \"octetstream sum\" of the payload (contents transferred), intended for the purpose of quickly detecting incomplete bags before performing checksum validation.",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "10ff351a-659a-446d-84a6-e06ca3c83d55",
+          "tagFile": "bag-info.txt",
+          "tagName": "Collection-Notice",
+          "required": true,
+          "values": [],
+          "defaultValue": "This app collects personal information on behalf of SFU under the authority of the University Act (RSBC 1996, c.468) and the Freedom of Information and Protection of Privacy Act (RSBC 1996, c.165). The personal information collected includes your name, telephone number, and email address. The information is related directly to and needed by the University to verify users' authority to transfer records to the Archives and to follow up with questions about the contents of the transfer and its suitability for long-term archival preservation. As a user of an SFU Archives service, you may also be contacted in the future to participate in the evaluation of the effectiveness of the service. The information will be used by SFU Archives staff. If you have any questions about the collection and use of this information please contact the University Archivist and Coordinator of Information and Privacy, Paul Hebbard, pgh@sfu.ca, 778-782-2313.",
+          "userValue": "",
+          "help": "This app collects personal information on behalf of SFU under the authority of the University Act (RSBC 1996, c.468) and the Freedom of Information and Protection of Privacy Act (RSBC 1996, c.165). The personal information collected includes your name, telephone number, and email address. The information is related directly to and needed by the University to verify users' authority to transfer records to the Archives and to follow up with questions about the contents of the transfer and its suitability for long-term archival preservation. As a user of an SFU Archives service, you may also be contacted in the future to participate in the evaluation of the effectiveness of the service. The information will be used by SFU Archives staff. If you have any questions about the collection and use of this information please contact the University Archivist and Coordinator of Information and Privacy, Paul Hebbard, pgh@sfu.ca, 778-782-2313.",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        }
+      ],
+      "serialization": "required",
+      "baseProfileId": null,
+      "isBuiltIn": false,
+      "tarDirMustMatchName": true
+    }
+  ],
+  "questions": [
+    {
+      "id": "44b8f8ca-bb43-4fff-b559-a6eba4a8fa16",
+      "prompt": "If you want to store your name as a default value, enter it here",
+      "objType": "BagItProfile",
+      "objId": "526599cc-1bf8-48bf-a4a7-e0649c538706",
+      "field": "adc872ec-cb3f-4b56-b7e9-2d8c00986456"
+    },
+    {
+      "id": "bbf462cb-6660-4fc8-bac2-49a1cd89e7fd",
+      "prompt": "If you want to store your email address as a default value, enter it here",
+      "objType": "BagItProfile",
+      "objId": "526599cc-1bf8-48bf-a4a7-e0649c538706",
+      "field": "bc7e35d6-babc-4bb3-9883-c27c1948b188"
+    }
+  ],
+  "remoteRepositories": [],
+  "storageServices": []
+}
