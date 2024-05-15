@@ -7,6 +7,12 @@ SFU Archives has created three profiles for different transfer scenarios. Versio
 The Archives uses DART as its preferred packaging tool. Producers who wish to transfer digital records to SFU Archives should download and install DART and import the appropriate profile(s) into the app.
 
 ## Import a profile into DART
+To import a BagIt Profile, open DART and perform the following steps.
+1.	Select `Settings > BagIt Profiles` from the menu bar.
+2.	On the `BagIt Profiles` page, click the `Import Profile` button.
+3.	At the prompt, select "Import from URL".
+4.	In the `Profile URL` field, enter the url from a profile below (url should begin with `https://raw.githubusercontent.com/`).
+5.	Click the `Import` button.
 
 ## Current profiles
 ### SFU University Records Transfer
