@@ -246,43 +246,7 @@
       "tarDirMustMatchName": true
     }
   ],
-  "questions": [
-    {
-      "id": "4e5c7475-a5b6-43a5-b593-20000a05d56e",
-      "prompt": "If you want to store your name as a default value, enter it here",
-      "objType": "BagItProfile",
-      "objId": "504b7312-dfc4-49d8-9d51-17e661881bb0",
-      "field": "e628b283-de4e-483b-a8d0-34b09d2f9940"
-    },
-    {
-      "id": "a85be527-e0f7-4fea-9bc6-9e5b781ac1e4",
-      "prompt": "If you want to store your email address as a default value, enter it here",
-      "objType": "BagItProfile",
-      "objId": "504b7312-dfc4-49d8-9d51-17e661881bb0",
-      "field": "68c060f2-79f7-4a83-b075-ebe7f0d561fc"
-    },
-    {
-      "id": "9507c894-c459-4a24-9939-849473b9fc31",
-      "prompt": "If you want to store your position title as a default value, enter it here",
-      "objType": "BagItProfile",
-      "objId": "504b7312-dfc4-49d8-9d51-17e661881bb0",
-      "field": "c4992d51-8631-4763-8279-fce47f84d486"
-    },
-    {
-      "id": "7f183ee0-5e80-4ad1-bf53-bad09d5b11e5",
-      "prompt": "If you want to store your organization's name as a default value, enter it here",
-      "objType": "BagItProfile",
-      "objId": "504b7312-dfc4-49d8-9d51-17e661881bb0",
-      "field": "d172b86a-77ab-4ee9-bde4-dc103acec80d"
-    },
-    {
-      "id": "30e0974b-0257-420d-b143-4dae18e44e65",
-      "prompt": "If you want to store your organization's address, enter it here",
-      "objType": "BagItProfile",
-      "objId": "504b7312-dfc4-49d8-9d51-17e661881bb0",
-      "field": ""
-    }
-  ],
+  "questions": [],
   "remoteRepositories": [],
   "storageServices": []
 }
