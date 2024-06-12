@@ -49,7 +49,7 @@
             "0.97",
             "1.0"
           ],
-          "defaultValue": "0.97",
+          "defaultValue": "1.0",
           "userValue": "",
           "help": "Which version of the BagIt specification describes this bag's format?",
           "isBuiltIn": false,
