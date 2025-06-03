@@ -4,15 +4,13 @@ This site lists the various software tools, scripts and utilities SFU Archives u
 
 For each utility, there is a minimal description, with links to downloadable files or documentation where applicable. To minimize duplications, the Archives manages its full documentation on a single internal SharePoint site. Pages suitable for public sharing are output as pdf and posted here; pages may be redacted to remove server names and file paths.
 
-| Utility | Description / links |
-|:------ | :------- |
-| Access-to-Memory (AtoM) |
-Online access platform (descriptions and digital objects) shared by SFU Archives and SFU Special Collections and Rare Books.
+***Access-to-Memory (AtoM)***
+- Online access platform (descriptions and digital objects) shared by SFU Archives and SFU Special Collections and Rare Books.
 - [Site](https://atom.archives.sfu.ca)
-- [SFU AtoM Guidelines and Processing Resources (GitHub)](https://github.com/SFU-Archives/atom-guidelines-processing-resources) |
+- [SFU AtoM Guidelines and Processing Resources (GitHub)](https://github.com/SFU-Archives/atom-guidelines-processing-resources)
 
-| Archives Information System (AIS) Database |
-Custom in-house FileMaker database used to manage information relating to accessions (Archives module) and AIPs (Repository module).
+***Archives Information System (AIS) Database***
+- Custom in-house FileMaker database used to manage information relating to accessions (Archives module) and AIPs (Repository module).
 - Documentation maintained internally; available on request. |
 
 
