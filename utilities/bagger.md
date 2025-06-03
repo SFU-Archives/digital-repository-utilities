@@ -8,7 +8,9 @@ Because Bagger has not been actively updated, the current version validates Bags
 
 In the Fall of 2023, SFU Archives decided to retire [SFU MoveIt](sfu-moveit.md) and discontinue using Bagger for validation. In 2024 the Archives adopted [DART](dart.md) as a single utility for both packaging and validation.
 
-## Links
+### Links
 - [Bagger GitHub page](https://github.com/LibraryOfCongress/bagger).
+- [SFU Archives user guide: Bagger](../sfu-archives-guides/bagger-sfu-archives.pdf)
+
 
 ###### Last updated: June 3, 2025
