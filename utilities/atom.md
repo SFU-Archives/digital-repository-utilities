@@ -13,6 +13,5 @@ SFU Archives has used AtoM since 2014 as its primary platform for archival descr
 - [SFU AtoM site](https://atom.archives.sfu.ca)
 - [SFU AtoM Guidelines and Processing Resources (GitHub)](https://github.com/SFU-Archives/atom-guidelines-processing-resources)
 
-```
-Last updated: June 3, 2025
-```
+
+###### Last updated: June 3, 2025
