@@ -1,8 +1,8 @@
 # Digital Repository Utilities
 
-This site lists the various software tools, scripts and utilities SFU Archives uses in its digital repository work. Its purpose is to facilitate public sharing with institutions that may be interested in adpating or using the tools.
+This site lists the various software tools, scripts and utilities SFU Archives uses in its digital repository work. Its purpose is to facilitate public sharing with institutions that may be interested in adapting or using the tools.
 
-Each entry links to a minimal description, with additional links to downloadable files or documentation where applicable. To minimize duplication, the Archives manages its full documentation on a single internal SharePoint site. Pages suitable for public sharing are output as pdf and posted here; pages may be redacted to remove server names and file paths.
+Each entry links to a minimal description, with additional links to downloadable files or documentation where applicable. The Archives maintains its fuller SFU-specific documentation on an internal SharePoint site. Pages suitable for public sharing are output as pdf and posted here as [SFU Archives usage guides](sfua-usage-guides/guides-home.md); pages may be redacted to remove server names and file paths.
 
 [Recent Changes and Additions](recent-changes)
 
@@ -20,7 +20,7 @@ Each entry links to a minimal description, with additional links to downloadable
 
 [Contact-Sheet Maker](utilities/contact-sheet-maker.md): Python script to create a set of thumbnail images as a pdf document from a folder of digital photographs.
 
-[Digital Archivist's Resource Tool (DART)](utilities/dart.md): desktop application for packaging and validating digital transfers; as of Fall 2023, Archives is investigating as a replacement for [[Bagger]] and [[SFU MoveIt]].
+[Digital Archivist's Resource Tool (DART)](utilities/dart.md): desktop application for packaging and validating digital transfers.
 
 [DIP upload](utilities/dip-upload.md): command-line scripts for retrieving offline DIPs from storage for upload to AtoM.
 
