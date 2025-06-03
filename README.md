@@ -4,51 +4,51 @@ This site lists the various software tools, scripts and utilities SFU Archives u
 
 Each entry links to a minimal description, with additional links to downloadable files or documentation where applicable. To minimize duplication, the Archives manages its full documentation on a single internal SharePoint site. Pages suitable for public sharing are output as pdf and posted here; pages may be redacted to remove server names and file paths.
 
-- [Recent Changes and Additions](recent-changes)
+[Recent Changes and Additions](recent-changes)
 
-- [Access-to-Memory (AtoM)](utilities/atom): SFU Archives' online access platform and catalog of archival descriptions.
+[Access-to-Memory (AtoM)](utilities/atom.md): SFU Archives' online access platform and catalog of archival descriptions.
 
-- [Archives Information System (AIS) Database](utilities/ais): custom FileMaker database used to manage information relating to accessions (Archives module) and AIPs (Repository module).
+[Archives Information System (AIS) Database](utilities/ais.md): custom FileMaker database used to manage information relating to accessions (Archives module) and AIPs (Repository module).
 
-- [Archivematica](utilities/archivematica): SFU Archives' main digital preservation platform.
+[Archivematica](utilities/archivematica.md): SFU Archives' main digital preservation platform.
 
-- [Bagger](utilities/bagger): desktop application for packaging and validating transfers.
+[Bagger](utilities/bagger.md): desktop application for packaging and validating transfers.
 
-- [Brunnhilde](utilities/brunnhilde): characterization tool for analyzing files transferred to Archives and to support archival appraisal, arrangement and description.
+[Brunnhilde](utilities/brunnhilde.md): characterization tool for analyzing files transferred to Archives and to support archival appraisal, arrangement and description.
 
-- [ClamAV](utilities/clam-av): antivirus engine used to check for malware in digital transfers.
+[ClamAV](utilities/clamav.md): antivirus engine used to check for malware in digital transfers.
 
-- [Contact-Sheet Maker](utilities/contact-sheet-maker): Python script to create a set of thumbnail images as a pdf document from a folder of digital photographs.
+[Contact-Sheet Maker](utilities/contact-sheet-maker.md): Python script to create a set of thumbnail images as a pdf document from a folder of digital photographs.
 
-- [Digital Archivist's Resource Tool (DART)](utilities/dart): desktop application for packaging and validating digital transfers; as of Fall 2023, Archives is investigating as a replacement for [[Bagger]] and [[SFU MoveIt]].
+[Digital Archivist's Resource Tool (DART)](utilities/dart.md): desktop application for packaging and validating digital transfers; as of Fall 2023, Archives is investigating as a replacement for [[Bagger]] and [[SFU MoveIt]].
 
-- [DIP upload](utilities/dip-upload): command-line scripts for retrieving offline DIPs from storage for upload to AtoM.
+[DIP upload](utilities/dip-upload.md): command-line scripts for retrieving offline DIPs from storage for upload to AtoM.
 
-- [Emailchemy](utilities/emailchemy): email migration and conversion software that can convert email to various open formats.
+[Emailchemy](utilities/emailchemy.md): email migration and conversion software that can convert email to various open formats.
 
-- [ePADD](utilities/epadd): open-source software for processing and providing access to email archives.
+[ePADD](utilities/epadd.md): open-source software for processing and providing access to email archives.
 
-- [Extent Calculator](utilities/extent-calculator): online app for calculating fonds and series extents from box types. Documentation on [AtoM Guidelines and Processing Resources site](https://github.com/SFU-Archives/atom-guidelines-processing-resources/blob/main/resources/extent-calculator.md); online calculator on the Archives' Shiny Apps site.
+[Extent Calculator](utilities/extent-calculator.md): online app for calculating fonds and series extents from box types. Documentation on [AtoM Guidelines and Processing Resources site](https://github.com/SFU-Archives/atom-guidelines-processing-resources/blob/main/resources/extent-calculator.md); online calculator on the Archives' Shiny Apps site.
 
-- [Fixity](utilities/fixity): open-source utility for verifying checksums of stored packages.
+[Fixity](utilities/fixity.md): open-source utility for verifying checksums of stored packages.
 
-- [Homebrew](utilities/homebrew): Open-source software package management system used to install various programs and command-line utilities on a Mac.
+[Homebrew](utilities/homebrew.md): Open-source software package management system used to install various programs and command-line utilities on a Mac.
 
-- [maildir2mbox Script](utilities/maildir2mbox): Python script for converting email from `maildir` to `mbox` formats.
+[maildir2mbox Script](utilities/maildir2mbox.md): Python script for converting email from `maildir` to `mbox` formats.
 
-- [msg2eml Script](utilities/msg2eml): Python script for converting `msg` email files to `eml` format.
+[msg2eml Script](utilities/msg2eml.md): Python script for converting `msg` email files to `eml` format.
 
-- [OfflineIMAP](utilities/offline-imap): command-line utility for exporting email from an active system in `maildir` format.
+[OfflineIMAP](utilities/offline-imap.md): command-line utility for exporting email from an active system in `maildir` format.
 
-- [Resolution Calculator](utilities/resolution-calculator): online app for calculating scanning resolutions for digitizing photographic materials (negatives, slides, prints). Documentation on [AtoM Guidelines and Processing Resources site](https://github.com/SFU-Archives/atom-guidelines-processing-resources/blob/main/resources/resolution-calculator.md); online calculator on the Archives' [Shiny App site](https://sfuarchives.shinyapps.io/resolution_calculator/).
+[Resolution Calculator](utilities/resolution-calculator.md): online app for calculating scanning resolutions for digitizing photographic materials (negatives, slides, prints). Documentation on [AtoM Guidelines and Processing Resources site](https://github.com/SFU-Archives/atom-guidelines-processing-resources/blob/main/resources/resolution-calculator.md); online calculator on the Archives' [Shiny App site](https://sfuarchives.shinyapps.io/resolution_calculator/).
 
-- [rsync](utilities/rsync): command-line utility for copying and moving digital files.
+[rsync](utilities/rsync.md): command-line utility for copying and moving digital files.
 
-- [SFU MoveIt](utilities/sfu-moveit): desktop packaging utility created by SFU Archives to support digital transfers; retired in the Fall of 2023.
+[SFU MoveIt](utilities/sfu-moveit.md): desktop packaging utility created by SFU Archives to support digital transfers; retired in the Fall of 2023.
 
-- [SFU Vault](utilities/sfu-vault): SFU's cloud service for file sharing and storage; used in digital transfer.
+[SFU Vault](utilities/sfu-vault.md): SFU's cloud service for file sharing and storage; used in digital transfer.
 
-- [Tree](utilities/retirement): command-line utility for analyzing the directory structure of digital transfers.
+[Tree](utilities/tree.md.md): command-line utility for analyzing the directory structure of digital transfers.
 
 `Last updated: June 3, 2025`
 
