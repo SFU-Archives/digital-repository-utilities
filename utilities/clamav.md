@@ -25,7 +25,7 @@ Flags:
 
 ### Links
 - [ClamAV website](https://www.clamav.net)
-- [SFU Archives usage guide: ClamAV](../sfu-archives-guides/clamav-sfu-archives.pdf)
+- [SFU Archives usage guide (pdf)](../sfua-usage-guides/clamav-sfua.pdf)
 
 
 ###### Last updated: June 3, 2025

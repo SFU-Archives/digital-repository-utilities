@@ -10,7 +10,7 @@ In the Fall of 2023, SFU Archives decided to retire [SFU MoveIt](sfu-moveit.md) 
 
 ### Links
 - [Bagger GitHub page](https://github.com/LibraryOfCongress/bagger).
-- [SFU Archives user guide: Bagger](../sfu-archives-guides/bagger-sfu-archives.pdf)
+- [SFU Archives usage guide (pdf)](../sfua-usage-guides/bagger-sfua.pdf)
 
 
 ###### Last updated: June 3, 2025

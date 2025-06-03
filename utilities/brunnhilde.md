@@ -9,7 +9,7 @@ SFU Archives uses Brunnhilde in both its digital transfer and archival processin
 ### Links
 - [Brunnhilde GitHub site](https://github.com/tw4l/brunnhilde)
 - [Brunnhilde GUI GitHub site](https://github.com/tw4l/brunnhilde-gui)
-- [SFU Archives user guide: Brunnhilde](../sfu-archives-guides/brunnhilde-sfu-archives.pdf)
+- [SFU Archives usage guide (pdf)](../sfua-usage-guides/brunnhilde-sfua.pdf)
 
 
 ###### Last updated: June 3, 2025
