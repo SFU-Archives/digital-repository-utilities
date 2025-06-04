@@ -1,124 +1,32 @@
-The **DIP munger scripts** are custom command-line scripts that support upload of stored Archivematica DIP packages to AtoM. For SFU Archives, there are two main use cases:
+# DIP Upload
 
-1. **Digitization** of previously described analog materials that have existing AtoM descriptions and digital copies are ready for upload to AtoM.
+SFU Archives uses [Archivematica](archivematica.md) as its digital preservation platform. Archivematica creates **Archival Information Packages (AIPs)** for long-term preservation and can send **Dissemination Information Packages (DIPs)** to [SFU AtoM](atom.md) as access copies.
 
-2. **Access / copyright review** of materials previously ingested to Archivematica and described in AtoM and now cleared for online dissemination (no access or copyright restrictions).
+When sending DIPs to AtoM, Archivematica always creates a new AtoM description record, linked to an existing **parent** description. This standard Archivematica workflow, however, cannot be used when the DIP object maps to an already existing AtoM description (e.g. an existing item). There are two main use cases:
 
-Archivematica can upload digital objects to AtoM by sending them to their **parent** description record. But cases like those described above, we want to send digital objects to an existing AtoM record itself. The scripts do this through the following steps:
-- Download Archivematica's **stored DIP** using the `dip-retrieve` script.
-- Edit the csv file created by `dip-retrieve` to map DIP objects to AtoM url stubs.
-- Upload the DIP with edited csv file to AtoM records (`dip-upload` for the digital object, `dip-metadata` for its metadata only).
+1. **Digitization:** previously described analog materials that have existing AtoM descriptions are digitized and ready for upload to AtoM.
 
-The scripts were originally created by SFU's Alex Garnett in 2018. They were revised by Tessa Walsh (Artefactual Systems) in 2021 to work with the new security requirements of SFU Cloud, including the need to run the scripts with Multi-Factor Authentication (MFA).
+2. **Access / copyright review:** digital materials previously ingested to Archivematica and described in AtoM are reviewed for access or copyright restrictions, cleared (no restrictions apply), and can now be uploaded to AtoM.
 
-**Contents**
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [DIP retrieve](#dip-retrieve)
-- [Edit the csv file](#edit-the-csv-file)
-- [DIP upload](#dip-upload)
-- [DIP metadata upload](#dip-metadata-upload)
-- [Links](#links)
+In 2018, SFU's Alex Garnett created a set of **DIP munger scripts** to handle these scenarios. The archivist:
+- Installed the scripts on their local machine and edits the config file with server and user credential information (one-time).
+- Downloaded Archivematica's **stored DIP** using the `dip-retrieve` script.
+- Edited a csv file created by `dip-retrieve` to map DIP objects to AtoM url stubs.
+- Uploaded the DIP + csv file to AtoM (using `dip-upload` to send the digital objects to AtoM, `dip-metadata` for metadata only).
+-
 
-## Installation
-The DIP scripts are compiled Python scripts that must be installed on your computer so that they can be easily run as line commands in Terminal. The scripts have a number of dependencies that can make installation difficult, especially in SFU's "managed Mac / PC" environment. In order to install the scripts, you must have **administrator** access to your machine.
+In 2021, Tessa Walsh (Artefactual Systems) revised the scripts to work with new security requirements in the Archives' server environment (SFU Cloud), including the need to run the scripts with Multi-Factor Authentication (MFA).
 
-Follow install instructions from the [Artefactual Lab dip-mungers GitHub repository](https://github.com/artefactual-labs/dip-mungers).
+In 2024 the Archives migrated its servers to RHEL9, and there were difficulties installing and making the scripts work in the new environment. In May 2025 the Archives decided to retire the DIP munger scripts and instead rely on DIP upload methods Artefactual have built using a Symfony `digitalobject:load` command. Now the archivist:
+- Downloads the Archivematica **stored DIP** using Storage Service.
+- Creates a csv file with `slug` and `filename` columns to map DIP objects to AtoM description records.
+- Uploads the DIP + csv file to the AtoM server.
+- Logs on to the AtoM server to run the Symfony upload command.
 
-**Notes**
-- You will need to install `mysql` and `mysqlclient` if they are not already installed on your computer.
+### Links
+- [Alex Garnett's original DIP munger scripts (GitHub)]
+- [Tessa Walsh / Artefactual's revised DIP munger scripts (GitHub)]
+- [Artefactual documentation]
 
-- Your SFU user name must be added to the Archives' `VM access control list` in order to access the VMs on which AIPs and DIPs are stored.
-
-- You must have API keys associated with your AtoM and Archivematica user accounts; you can view / generate keys from your user profile in both those applications.
-
-## Configuration
-After installation, the `configuration file` is located at `~/.dip-mungers`; open to edit defaults.
-
-```
-[GENERAL]
-USERNAME = <<sfu_account_name>>
-JUMP_SERVER_HOSTNAME = <<bastion_host_name>>
-JUMP_SERVER_PORT = <<port>>
-
-[STORAGE_SERVICE]
-DEV_API_KEY = <<API_key_associated_with_dev_Storage_Service_account>>
-DEV_URL = <<dev_Storage_Service_url>>
-PROD_API_KEY = <<API_key_associated_with_production_Storage_Service_account>>
-PROD_URL = <<production_Storage_Service_url>>
-
-[ATOM]
-DEV_API_KEY = <<API_key_associated_with_dev_AtoM_account>>
-DEV_HOSTNAME = <<dev_AtoM_server_name>>
-DEV_URL = <<dev_AtoM_url>>
-PROD_API_KEY = <<API_key_associated_with_production_AtoM_account>>
-PROD_HOSTNAME = <<production_AtoM_server_name>>
-PROD_URL = <<production_AtoM_url>>
-```
-
-**Note**
-- `HOSTNAME` must use the server name, not its url alias.
-
-## DIP retrieve
-Run the `dip-retrieve` script to download a stored DIP along with an accompanying `csv` file.
-
-```
-$ dip-retrieve <<aip_uuid>>
-
-```
-
-The DIP will download to your `Desktop` folder.
-- You need only specify the AIP `uuid`.
-- Stored DIPs can also be downloaded from the Storage Service interface, but Storage Service will not create / download the required `csv` file.
-
-## Edit the csv file
-Before running the `upload` scripts, you must edit the `csv` file included in the DIP package.
-- The `csv` file will be included in the `objects` folder and it will have the same name as the parent DIP folder, e.g. `ACN2018-025_Fellman_EmailAttachments.csv`.
-
-The csv file has two columns: `filename` and `slug`.
-- The `filename` column (A) lists the names of the digital objects in the DIP; the names include the UUID that Archivematica assigned to each object.
-- The `slug` column (B) will be blank; this is where you enter the AtoM slugs.
-
-The AtoM slug is the last part of the AtoM url that follows `server_name.archives.sfu.ca/`
-- E.g. in `cottonwood.archives.sfu.ca/f-10-4-0-0-0-1` the slug is `f-10-4-0-0-0-1`.
-- In SFU AtoM, the slug is typically (but not always) identical to the unit's reference code, with the `f-` prefix in lowercase.
-
-Find the AtoM slugs of the existing descriptions and enter them into column B of the csv file, matching the slug to the appropriate filename.
-
-Be aware that the order of DIP objects in the `filename` column is not necessarily alphabetical.
-
-Depending on how the original DIP objects were named, you may be able to use [[OpenRefine]] to extract slugs via calculation.
-
-Save the `csv` file with changes and leave it in the same location.
-
-## DIP upload
-Run the `dip-upload` script when you want to upload a copy of the DIP objects (not just metadata).
-
-```
-dip-upload <<dip_file_path>>
-```
-
-You will be prompted to enter your SFU computing password, an `OTP code` (get from your MFA app or device), and your password again.
-- The two passwords reflects that you need to jump through SFU's `bastion host` and then to the AtoM server.
-
-Any error (mismatch) in the `slug` column will cause the entire operation to quit.
-- Correct the data on the `csv` file and re-run the upload script.
-
-## DIP metadata upload
-This script is similar to the [dip-upload](#dip-upload) script, except that it sends only the minimal file metadata about the DIP objects rather than the full object itself.
-- This is the equivalent of doing a bulk **metadata-only DIP upload**.
-
-```
-dip-metadata <<dip_file_path>>
-```
-
-Again, you will be prompted for password (twice) and `OTP code`.
-
-The Archives rarely uses this script. The main use case is where you digitize previously described analog materials, have not yet cleared the records for access or copyright restrictions but you would like to send the digital object metadata to the existing Atom records to indicate to users that digital copies exist.
-
-## Links
-The scripts were created by Alex Garnett, but re-written by Tessa Walsh from Artefactual Systems. Source code and documentation are available on the [Artefactual Labs GitHub site](https://github.com/artefactual-labs) at: https://github.com/artefactual-labs/dip-mungers.
-
-```
-Last updated: Nov 28, 2023
-```
+###### Last updated: June 3, 2025
+###### [Back to Home](../README.md)
