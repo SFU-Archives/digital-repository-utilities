@@ -1,3 +1,4 @@
+# Recent Changes and Additions
 This page documents recent changes and additions to the DR Utilities documentation.
 
 ### Aug 2025
@@ -7,5 +8,5 @@ Primary documentation moved to Archives' internal Teams site (Pages) for on-goin
 All documentation moved from repository pages to the [[Wiki section of the site|Home]]: minor revisions to most existing entries.
 
 ```
-Last updated: Nov 28, 2023
+Last updated: August 11, 2025
 ```

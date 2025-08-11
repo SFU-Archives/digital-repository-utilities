@@ -33,6 +33,7 @@ Each entry links to a minimal description, with additional links to downloadable
 ### Contact-Sheet Maker
 - Python script to create a set of thumbnail images as a pdf document from a folder of digital photographs.
 - [SFU Archives usage guide: Contact sheet maker (pdf)](/sfua-usage-guides/contact-sheet-maker-sfua.pdf).
+- [Download script (zip file)](/downloads/contact-sheet-maker.zip).
 
 ### Digital Archivist's Resource Tool (DART)
 - Desktop application for packaging and validating digital transfers.
@@ -75,6 +76,7 @@ Each entry links to a minimal description, with additional links to downloadable
 ### maildir2mbox Script
 - Python script for converting email from `maildir` to `mbox` formats.
 - [SFU Archives usage guide: maildir2mbox script (pdf)](/sfua-usage-guides/maildir2mbox-script-sfua.pdf).
+- [Download the script (py)](/downloads/mailbox2mbox.py)
 
 ### msg2eml
 - Python script for converting `msg` email files to `eml` format.
@@ -94,13 +96,23 @@ Each entry links to a minimal description, with additional links to downloadable
 - Desktop packaging utility created by SFU Archives to support digital transfers.
 - Retired in the Fall of 2023; replaced by DART.
 
-SFU Vault
+### SFU Vault
 - SFU's cloud service for file sharing and storage; used in digital transfer.
 
 ### Tree
 - Command-line utility for analyzing the directory structure of digital transfers.
 
-`Last updated: August 11, 2025`
+### VLC
+- Open-source media player that can also be used for video conversion.
+- [SFU Archives usage guide: VLC (pdf)](/sfua-usage-guides/vlc-sfua.pdf).
+
+### WARC creation
+- SFU Archives uses wget and the WARCreate Chrome plug-in to create WARC files.
+- [SFU Archives usage guide: WARC creation (pdf)](/sfua-usage-guides/warc-creation-sfua.pdf).
+
+```
+Last updated: August 11, 2025
+```
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
