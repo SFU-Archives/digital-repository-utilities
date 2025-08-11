@@ -2,7 +2,7 @@
 
 This site lists the various software tools, scripts and utilities SFU Archives uses in its digital repository work. Its purpose is to facilitate public sharing with institutions that may be interested in adapting or using the tools.
 
-Each entry links to a minimal description, with additional links to downloadable files or documentation where applicable. The Archives maintains its fuller SFU-specific documentation on an internal SharePoint site. Pages suitable for public sharing are output as pdf and posted here as [SFU Archives usage guides](sfua-usage-guides/guides-home.md); pages may be redacted to remove server names and file paths.
+Each entry links to a minimal description, with additional links to downloadable files or documentation where applicable. The Archives maintains its fuller SFU-specific documentation on an internal SharePoint site. Pages suitable for public sharing are output as pdf and posted here as [SFU Archives usage guides](sfua-usage-guides); pages may be redacted to remove server names and file paths.
 
 [Recent Changes and Additions](recent-changes.md)
 
@@ -91,6 +91,7 @@ Each entry links to a minimal description, with additional links to downloadable
 
 ### rsync
 - Command-line utility for copying and moving digital files.
+- [SFU Archives usage guide: rsync (pdf)](/sfua-usage-guides/rsync-sfua.pdf).
 
 ### SFU MoveIt
 - Desktop packaging utility created by SFU Archives to support digital transfers.
@@ -101,6 +102,7 @@ Each entry links to a minimal description, with additional links to downloadable
 
 ### Tree
 - Command-line utility for analyzing the directory structure of digital transfers.
+- [SFU Archives usage guide: Tree (pdf)](/sfua-usage-guides/tree-sfua.pdf).
 
 ### VLC
 - Open-source media player that can also be used for video conversion.
