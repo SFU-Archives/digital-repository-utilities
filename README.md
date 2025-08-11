@@ -4,15 +4,23 @@ This site lists the various software tools, scripts and utilities SFU Archives u
 
 Each entry links to a minimal description, with additional links to downloadable files or documentation where applicable. The Archives maintains its fuller SFU-specific documentation on an internal SharePoint site. Pages suitable for public sharing are output as pdf and posted here as [SFU Archives usage guides](sfua-usage-guides/guides-home.md); pages may be redacted to remove server names and file paths.
 
-[Recent Changes and Additions](recent-changes)
+[Recent Changes and Additions](recent-changes.md)
 
-[Access-to-Memory (AtoM)](utilities/atom.md): SFU Archives' online access platform and catalog of archival descriptions.
+**Access-to-Memory (AtoM)**
+- SFU Archives' online access platform and catalog of archival descriptions.
+- See [SFU AtoM Guidelines and Processing Resources (GitHub)](https://github.com/SFU-Archives/digital-repository-utilities/blob/dr-utilities-revised/sfua-usage-guides/dart-sfua.pdf)
 
-[Archives Information System (AIS) Database](utilities/ais.md): custom FileMaker database used to manage information relating to accessions (Archives module) and AIPs (Repository module).
+**Archives Information System (AIS) Database**
+- Custom FileMaker database used to manage information relating to accessions (Archives module) and AIPs (Repository module).
+- Documentation maintained internally on Teams site; available on request.
 
-[Archivematica](utilities/archivematica.md): SFU Archives' main digital preservation platform.
+**Archivematica**
+- SFU Archives' main digital preservation platform.
+- Documentation maintained internally on Teams site; available on request.
 
-[Bagger](utilities/bagger.md): desktop application for packaging and validating transfers.
+**Bagger**
+- Desktop application for packaging and validating transfers.
+- [SFU Archives usage guides (pdf)](/sfua-usage-guides/bagger-sfua.pdf)
 
 [Brunnhilde](utilities/brunnhilde.md): characterization tool for analyzing files transferred to Archives and to support archival appraisal, arrangement and description.
 
