@@ -6,19 +6,19 @@ Each entry links to a minimal description, with additional links to downloadable
 
 [Recent Changes and Additions](recent-changes.md)
 
-**Access-to-Memory (AtoM)**
+### Access-to-Memory (AtoM)
 - SFU Archives' online access platform and catalog of archival descriptions.
 - See [SFU AtoM Guidelines and Processing Resources (GitHub)](https://github.com/SFU-Archives/digital-repository-utilities/blob/dr-utilities-revised/sfua-usage-guides/dart-sfua.pdf)
 
-**Archives Information System (AIS) Database**
+### Archives Information System (AIS) Database
 - Custom FileMaker database used to manage information relating to accessions (Archives module) and AIPs (Repository module).
 - Documentation maintained internally on Teams site; available on request.
 
-**Archivematica**
+### Archivematica
 - SFU Archives' main digital preservation platform.
 - Documentation maintained internally on Teams site; available on request.
 
-**Bagger**
+### Bagger
 - Desktop application for packaging and validating transfers.
 - [SFU Archives usage guides (pdf)](/sfua-usage-guides/bagger-sfua.pdf)
 
