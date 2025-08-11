@@ -15,7 +15,7 @@ In SFU Archives' use, SFU staff and private donors:
 
 No data is transferred over the network through DART (in the longer term this is something the Archives may investigate). On receipt of a transfer, the Archives uses DART to validate transfers.
 
-As of June 2024, DART would is included in SFU's Managed Software Center, allowing university staff working on SFU-managed machines to easily download and install the program.
+Since June 2024 DART has been included in SFU's Managed Software Center, allowing university staff working on SFU-managed machines to easily download and install the program.
 
 See the [Archives' DART usage guide](../sfua-usage-guides/dart-sfua.pdf) for details on configuration, settings and BagIt profiles.
 
