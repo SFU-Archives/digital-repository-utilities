@@ -1,0 +1,322 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "appSettings": [],
+  "bagItProfiles": [
+    {
+      "id": "9c065ee5-d7a2-46ea-ba2b-81526c97971b",
+      "name": "Digitization SFU Archives",
+      "description": "BagIt Profile for SFU Archives' in-house digitization projects",
+      "acceptBagItVersion": [
+        "0.97",
+        "1.0"
+      ],
+      "acceptSerialization": [
+        "application/tar"
+      ],
+      "allowFetchTxt": false,
+      "bagItProfileInfo": {
+        "bagItProfileIdentifier": "https://raw.githubusercontent.com/SFU-Archives/digital-repository-utilities/master/bagit-profiles/digitization-sfu-archives-v1-0.json",
+        "bagItProfileVersion": "",
+        "contactEmail": "archives@sfu.ca",
+        "contactName": "R. Dancy",
+        "externalDescription": "Digitization SFU Archives",
+        "sourceOrganization": "www.sfu.ca/archives.html",
+        "version": "1.0"
+      },
+      "manifestsRequired": [
+        "md5",
+        "sha256"
+      ],
+      "manifestsAllowed": [
+        "md5",
+        "sha256"
+      ],
+      "tagManifestsRequired": [],
+      "tagManifestsAllowed": [
+        "md5",
+        "sha256"
+      ],
+      "tagFilesAllowed": [
+        "*"
+      ],
+      "tags": [
+        {
+          "id": "9f643956-61b6-4e98-a8b7-a9d5adff995a",
+          "tagFile": "bagit.txt",
+          "tagName": "BagIt-Version",
+          "required": true,
+          "values": [
+            "0.97",
+            "1.0"
+          ],
+          "defaultValue": "0.97",
+          "userValue": "",
+          "help": "Which version of the BagIt specification describes this bag's format?",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "fb0a27ba-f69c-44f2-96c3-b64bc5b9f5d0",
+          "tagFile": "bagit.txt",
+          "tagName": "Tag-File-Character-Encoding",
+          "required": true,
+          "values": [],
+          "defaultValue": "UTF-8",
+          "userValue": "",
+          "help": "How are this bag's plain-text tag files encoded? (Hint: usually UTF-8)",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "c4f8b8e6-eb3d-46f3-84cb-6a847464659c",
+          "tagFile": "bag-info.txt",
+          "tagName": "Bag-Count",
+          "required": false,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Bag number and count of bags in transfer; two numbers separated by \"of\" - e.g. \"1 of 4\"",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "9a1fd064-26ba-4016-9a06-f483e7603bc0",
+          "tagFile": "bag-info.txt",
+          "tagName": "Bag-Size",
+          "required": true,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Calculated automatically by app; represents the size of the bag transferred",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "cc7c3a6f-b43b-4884-b3f3-8ebdcb22876d",
+          "tagFile": "bag-info.txt",
+          "tagName": "Bagging-Date",
+          "required": true,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Calculated automatically by app; represents the date the bag was created",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "84dff6d3-b6a9-4849-a4a7-7ec1febd4443",
+          "tagFile": "bag-info.txt",
+          "tagName": "Bagging-Software",
+          "required": true,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Calculated automatically by app; set to DART",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "6827af59-1363-4a20-b2bd-5bbda351bba3",
+          "tagFile": "bag-info.txt",
+          "tagName": "Contact-Name",
+          "required": true,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Name of Archives staff responsible for creating the bag",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "0c4ad4d0-f338-4610-a34c-e01fa5fc6731",
+          "tagFile": "bag-info.txt",
+          "tagName": "External-Description",
+          "required": true,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Name of digitization project and / or brief description",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "84893e9b-12af-4acc-85f9-d94965e045d8",
+          "tagFile": "bag-info.txt",
+          "tagName": "Payload-Oxum",
+          "required": true,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Calculated automatically by app",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "60173bcb-1719-45d0-89ee-06a5c025f9d2",
+          "tagFile": "bag-info.txt",
+          "tagName": "Source-Organization",
+          "required": true,
+          "values": [],
+          "defaultValue": "SFU Archives",
+          "userValue": "",
+          "help": "Defaults to \"SFU Archives\"",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": false,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "1710d67b-5226-48c5-bca9-5920166c4e33",
+          "tagFile": "bag-info.txt",
+          "tagName": "Contact-Position-Title",
+          "required": true,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Position title of Archives' staff responsible for creating the bag",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": true,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "ff1aa3cc-6ccf-44a1-aa8b-94e687d6a5c6",
+          "tagFile": "bag-info.txt",
+          "tagName": "Bag-Group-Identifier",
+          "required": false,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Processing Project ID if applicable",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": true,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "ad0956b2-4ddc-4bbb-8914-8cd9e8136828",
+          "tagFile": "bag-info.txt",
+          "tagName": "Digitization-By",
+          "required": true,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Person responsible for digitization",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": true,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "25e21e94-7a46-4ab6-865f-ad6752c5964d",
+          "tagFile": "bag-info.txt",
+          "tagName": "Digitization-Date-Start",
+          "required": false,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Date digitization work began",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": true,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "b771720a-d0e3-4140-9ef1-8e6ab5fde800",
+          "tagFile": "bag-info.txt",
+          "tagName": "Digitization-Date-End",
+          "required": true,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Date digitization work completed",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": true,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "72068811-8a7a-4918-961a-ac95031492b9",
+          "tagFile": "bag-info.txt",
+          "tagName": "Digitization-Hardware",
+          "required": false,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Hardware used in digitization",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": true,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "cb4f48be-c905-4367-bba6-e4c71f7eeb75",
+          "tagFile": "bag-info.txt",
+          "tagName": "Digitization-Software",
+          "required": false,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Software used in digitization",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": true,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "080ce119-ab01-465b-9dfc-17a9531236b8",
+          "tagFile": "bag-info.txt",
+          "tagName": "Digitization-Resolution",
+          "required": false,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Resolution in dpi",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": true,
+          "wasAddedForJob": false
+        },
+        {
+          "id": "9a6520a1-8193-44f8-b418-c3d9b6b548aa",
+          "tagFile": "bag-info.txt",
+          "tagName": "Digitization-Notes",
+          "required": false,
+          "values": [],
+          "defaultValue": "",
+          "userValue": "",
+          "help": "Any other information relating to the digitization work",
+          "isBuiltIn": false,
+          "isUserAddedFile": false,
+          "isUserAddedTag": true,
+          "wasAddedForJob": false
+        }
+      ],
+      "serialization": "required",
+      "baseProfileId": null,
+      "isBuiltIn": false,
+      "tarDirMustMatchName": false
+    }
+  ],
+  "questions": [],
+  "remoteRepositories": [],
+  "storageServices": []
+}
