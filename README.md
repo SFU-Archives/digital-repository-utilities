@@ -22,6 +22,10 @@ Each entry links to a minimal description, with additional links to downloadable
 - Desktop application for packaging and validating transfers.
 - [SFU Archives usage guide: Bagger (pdf)](/sfua-usage-guides/bagger-sfua.pdf).
 
+### BagIt Profiles
+- BagIt Profiles for creating transfer packages in various contexts.
+- [SFU Archives usage guide: BagIt Profiles (pdf)](/sfua-usage-guides/bagit-profiles-sfua.pdf).
+
 ### Brunnhilde
 - Characterization tool for analyzing files transferred to Archives and to support archival appraisal, arrangement and description.
 - [SFU Archives usage guide: Brunnhilde (pdf)](/sfua-usage-guides/brunnhilde-sfua.pdf).
@@ -113,7 +117,7 @@ Each entry links to a minimal description, with additional links to downloadable
 - [SFU Archives usage guide: WARC creation (pdf)](/sfua-usage-guides/warc-creation-sfua.pdf).
 
 ```
-Last updated: August 11, 2025
+Last updated: August 19, 2025
 ```
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
